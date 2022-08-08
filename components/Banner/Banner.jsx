@@ -10,7 +10,7 @@ const Banner = (props) => {
 
   return (
     <div className='bg-primary -z-10'>
-      <div className='w-4/5 mx-auto relative'>
+      <div className='w-4/5 mx-auto relative overflow-hidden'>
         <SubNav />
         <Navbar />
 
@@ -73,7 +73,7 @@ const Banner = (props) => {
                   : images.headerImage
               }
               alt='female-student-holding-books'
-              height={path === "/" ? 548 : 434}
+              height={path === "/" ? 550 : 435}
               width={path === "/" ? 380 : 320}
             />
           </div>
