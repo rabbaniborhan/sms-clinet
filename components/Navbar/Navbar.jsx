@@ -1,53 +1,139 @@
 import React from "react";
 import Link from "next/link";
+import { ArrowDown, ArrowRight } from "../../icons/icons";
 
-// <---------------The parent component is Banner.jsx---------------------->
+// <---------------The parent component is Banner.jsx + class-routine.jsx---------------------->
 
-const Navbar = () => {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About Us",
-      link: "/about-us",
-    },
-    {
-      name: "Academic",
-      link: "/academic",
-    },
-    {
-      name: "Routine",
-      link: "/routine",
-    },
-    {
-      name: "Result",
-      link: "/result",
-    },
-    {
-      name: "Notice",
-      link: "/notice",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
-    {
-      name: "Admission",
-      link: "/admission",
-    },
-  ];
+const Navbar = ({ path }) => {
   return (
-    <div className='mx-auto w-full z-10 bg-navbar pl-2 py-2.5 h-16 rounded-tl rounded-bl flex justify-between items-center shadow-xl absolute'>
-      <ul className='flex justify-around items-center list-none p-0 m-0 gap-5 text-white text-base w-full'>
-        {navItems.map((item, i) => (
-          <li key={i} className='hover:text-hover'>
-            <Link href={item.link}>{item.name}</Link>
-          </li>
-        ))}
+    // <--------------------Dynamically changing the background color of the navbar as per the path got form the props-------------------->
+    <div
+      className={`mx-auto w-full z-10 ${
+        path === "/routine/class-routine"
+          ? "bg-navbar-2 text-primary-color -my-16"
+          : "bg-navbar text-white"
+      } pl-2 py-2.5 h-16 rounded-tl rounded-bl flex justify-between items-center shadow-xl absolute`}>
+      <ul className='flex justify-around items-center list-none p-0 m-0  text-base w-full'>
+        <li className='hover:text-hover px-1'>
+          <Link href='/'>Home</Link>
+        </li>
+        <li className='px-1'>
+          <Link href='/about-us'>
+            <a className='hover:text-hover'>About Us</a>
+          </Link>
+        </li>
+
+        {/* ------------------------------------------------Academic with submenu Start-------------------------------------------- */}
+        <li className='relative group'>
+          <span className='cursor-pointer flex justify-center items-center gap-1 hover:text-hover py-5'>
+            Academic <ArrowDown className='text-2xl mt-0.5' />{" "}
+          </span>
+
+          {/* -------------------------Submenu--------------------------- */}
+          <ul className=' w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 left-0 transition-all'>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='/academic/teacher-info'>Teacher Info</Link>
+            </li>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='#'>Staff Info</Link>
+            </li>
+          </ul>
+        </li>
+        {/* ------------------------------------------------Academic with submenu End-------------------------------------------- */}
+
+        {/* ------------------------------------------------Routine with submenu Start-------------------------------------------- */}
+        <li className='hover:text-hover group px-1 relative'>
+          <span className='cursor-pointer flex justify-center items-center gap-1 py-5'>
+            Routine <ArrowDown className='text-2xl mt-0.5' />
+          </span>
+
+          {/* -------------------------Submenu--------------------------- */}
+          <ul className=' w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 left-0 transition-all'>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='/routine/class-routine'>Class Routine</Link>
+            </li>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='#'>Exam Routine</Link>
+            </li>
+          </ul>
+        </li>
+        {/* ------------------------------------------------Routine with submenu End-------------------------------------------- */}
+
+        {/* ------------------------------------------------Result with submenu Start-------------------------------------------- */}
+        <li className='group px-1 relative'>
+          <span className='cursor-pointer hover:text-hover flex justify-center items-center gap-1 py-5'>
+            Result <ArrowDown className='text-2xl mt-0.5' />
+          </span>
+
+          {/* -------------------------Submenu--------------------------- */}
+          <ul className=' w-40 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 left-0 transition-all'>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='#'>Admission Result</Link>
+            </li>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='#'>School Result</Link>
+            </li>
+          </ul>
+        </li>
+        {/* ------------------------------------------------Result with submenu End-------------------------------------------- */}
+
+        <li className='hover:text-hover py-5'>
+          <Link href='/'>
+            <a className='hover:text-hover'>Notice</a>
+          </Link>
+        </li>
+        <li className='hover:text-hover py-5'>
+          <Link href='/'>
+            <a className='hover:text-hover'>Contact</a>
+          </Link>
+        </li>
+
+        {/* ------------------------------------------------Admission with submenu Start-------------------------------------------- */}
+        <li className='group px-1 relative'>
+          <span className='cursor-pointer hover:text-hover flex justify-center gap-1 items-center py-5'>
+            Admission <ArrowDown className='text-2xl mt-0.5' />
+          </span>
+
+          {/* -------------------------Submenu--------------------------- */}
+          <ul className=' w-48 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 right-0 transition-all'>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full group relative'>
+              <div className='flex justify-between items-center gap-2'>
+                <Link href='#'>Admission Form</Link>
+                <ArrowRight className='text-xl mt-1' />
+              </div>
+
+              {/* -------------------------Submenu's submenu--------------------- */}
+              <ul className='w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-0 -right-[129px] transition-all'>
+                <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+                  <Link href='#'>Class Routine</Link>
+                </li>
+                <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+                  <Link href='#'>Exam Routine</Link>
+                </li>
+              </ul>
+            </li>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <a></a>
+              <Link href='#'>Admission Payment</Link>
+            </li>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='#'>School Payment</Link>
+            </li>
+            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
+              <Link href='#'>Admission Admit Card</Link>
+            </li>
+          </ul>
+        </li>
+        {/* ------------------------------------------------Admission with submenu End-------------------------------------------- */}
       </ul>
-      <button className='w-48 h-16 text-primary-color bg-white text-md font-semibold outline-none border-none btn-polygon '>
+
+      <button
+        // <--------------------Dynamically changing the background color of the button as per the path got form the props-------------------->
+        className={`w-48 h-16  ${
+          path === "/routine/class-routine"
+            ? "bg-primary text-white"
+            : "bg-white text-primary-color"
+        } text-md font-semibold outline-none border-none btn-polygon`}>
         Log in
       </button>
     </div>

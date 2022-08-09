@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import teacherData from "../../teacherData";
+import teacherData from "../../dummy_data/teacherData";
 import { Pagination } from "../../components";
 
 // <---------------The parent component is teacher-info/index.jsx---------------------->

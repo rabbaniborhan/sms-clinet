@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../data";
+import tableData from "../../dummy_data/tableData";
 import { Pagination } from "../../components";
 
 // <---------------The parent component is index.jsx/Home + notice.jsx/Notice---------------------->
@@ -27,7 +27,7 @@ const Table = () => {
       <table className='border-collapse bg-white w-full mx-auto'>
         {/* Mapping through the data.js file to generate table data */}
 
-        {data.map((item, i) => (
+        {tableData.map((item, i) => (
           <tbody key={i}>
             <tr>
               <td className='px-6 py-4 border-[0.5px] border-gray-400 text-left'>

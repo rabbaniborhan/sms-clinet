@@ -23,7 +23,7 @@ const Banner = (props) => {
             {/* Conditionally rendering the banner-texts for teacher-info or
             staff-info page */}
 
-            {path === "/teacher-info" && "/staff-info" ? (
+            {path === "/academic/teacher-info" && "/academic/staff-info" ? (
               <div className='space-y-6'>
                 <h4 className='font-semibold text-xl'>প্রধান অধ্যক্ষ</h4>
                 <h2 className='font-bold text-4xl leading-[50px]'>

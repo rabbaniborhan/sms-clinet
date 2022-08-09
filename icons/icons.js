@@ -14,6 +14,7 @@ import {
   MdEmail,
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
+  MdOutlineKeyboardArrowDown,
 } from "react-icons/md";
 
 export const Telephone = ({ className }) => {
@@ -58,4 +59,8 @@ export const ArrowLeft = ({ className }) => {
 
 export const ArrowRight = ({ className }) => {
   return <MdOutlineKeyboardArrowRight className={className} />;
+};
+
+export const ArrowDown = ({ className }) => {
+  return <MdOutlineKeyboardArrowDown className={className} />;
 };

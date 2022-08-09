@@ -1,4 +1,4 @@
-const data = [
+const tableData = [
   {
     title: "ক্লাস স্থগিত সম্পর্কিত বিজ্ঞপ্তি ১৬-০৫-২০২২।",
     date: "১৩/০৫/২০২২",
@@ -43,4 +43,4 @@ const data = [
   },
 ];
 
-export default data;
+export default tableData;

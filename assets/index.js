@@ -20,6 +20,7 @@ import teacher3 from "./teacher-3.png";
 import teacher4 from "./teacher-4.png";
 import teacher5 from "./teacher-5.png";
 import teacher6 from "./teacher-6.png";
+import schoolLogo from "./school-logo.png";
 
 const images = {
   headerImage,
@@ -44,6 +45,7 @@ const images = {
   teacher4,
   teacher5,
   teacher6,
+  schoolLogo,
 };
 
 export default images;
