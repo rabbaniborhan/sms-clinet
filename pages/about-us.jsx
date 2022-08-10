@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import React from "react";
 import {
   Banner,
@@ -8,11 +7,18 @@ import {
 } from "../components";
 
 const AboutUs = () => {
-  const router = useRouter();
-
   return (
     <div>
-      <Banner path={router.asPath} />
+      <Banner
+        /* Sending different values for showing alternative text and hiding the button from the banner */
+        path={{
+          btn: false,
+          imageAlter: false,
+          heightAlter: true,
+          textAlter: false,
+        }}
+        navPath={true}
+      />
       <InfoSection />
       <StatisticsSection />
       <PrincipalSection />

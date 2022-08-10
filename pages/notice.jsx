@@ -1,13 +1,19 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { Banner, Table } from "../components";
 
 const notice = () => {
-  const router = useRouter();
   return (
     <div>
-      {/* Sending url-path and banner-data as props for conditional rendering on different pages*/}
-      <Banner props={router.asPath} />
+      <Banner
+        /* Sending different values for showing alternative text and hiding the button from the banner */
+        path={{
+          btn: false,
+          textAlter: false,
+          imageAlter: false,
+          heightAlter: true,
+        }}
+        navPath={true}
+      />
       <Table />
     </div>
   );

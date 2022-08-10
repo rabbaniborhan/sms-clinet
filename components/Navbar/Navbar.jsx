@@ -4,14 +4,14 @@ import { ArrowDown, ArrowRight } from "../../icons/icons";
 
 // <---------------The parent component is Banner.jsx + class-routine.jsx---------------------->
 
-const Navbar = ({ path }) => {
+const Navbar = ({ navPath }) => {
   return (
     // <--------------------Dynamically changing the background color of the navbar as per the path got form the props-------------------->
     <div
       className={`mx-auto w-full z-10 ${
-        path === "/routine/class-routine"
-          ? "bg-navbar-2 text-primary-color -my-16"
-          : "bg-navbar text-white"
+        navPath
+          ? "bg-navbar text-white"
+          : "bg-navbar-2 text-primary-color -my-16"
       } pl-2 py-2.5 h-16 rounded-tl rounded-bl flex justify-between items-center shadow-xl absolute`}>
       <ul className='flex justify-around items-center list-none p-0 m-0  text-base w-full'>
         <li className='hover:text-hover px-1'>
@@ -53,7 +53,7 @@ const Navbar = ({ path }) => {
               <Link href='/routine/class-routine'>Class Routine</Link>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='#'>Exam Routine</Link>
+              <Link href='/routine/exam-routine'>Exam Routine</Link>
             </li>
           </ul>
         </li>
@@ -78,12 +78,12 @@ const Navbar = ({ path }) => {
         {/* ------------------------------------------------Result with submenu End-------------------------------------------- */}
 
         <li className='hover:text-hover py-5'>
-          <Link href='/'>
+          <Link href='/notice'>
             <a className='hover:text-hover'>Notice</a>
           </Link>
         </li>
         <li className='hover:text-hover py-5'>
-          <Link href='/'>
+          <Link href='/contact'>
             <a className='hover:text-hover'>Contact</a>
           </Link>
         </li>
@@ -130,9 +130,7 @@ const Navbar = ({ path }) => {
       <button
         // <--------------------Dynamically changing the background color of the button as per the path got form the props-------------------->
         className={`w-48 h-16  ${
-          path === "/routine/class-routine"
-            ? "bg-primary text-white"
-            : "bg-white text-primary-color"
+          navPath ? "bg-white text-primary-color" : "bg-primary text-white"
         } text-md font-semibold outline-none border-none btn-polygon`}>
         Log in
       </button>

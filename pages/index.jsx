@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import images from "../assets";
 import {
   Banner,
   InfoSection,
@@ -11,16 +10,23 @@ import {
 } from "../components";
 
 const Home = () => {
-  const router = useRouter();
-
   return (
     <div>
       <Head>
         <title>SMS</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      {/* Sending url-path and banner-data as props for conditional rendering on different pages*/}
-      <Banner path={router.asPath} />
+
+      <Banner
+        /* Sending different values for showing alternative text and hiding the button from the banner */
+        path={{
+          btn: true,
+          textAlter: false,
+          imageAlter: false,
+          heightAlter: false,
+        }}
+        navPath={true}
+      />
       <LatestNews />
       <Table />
       <InfoSection />

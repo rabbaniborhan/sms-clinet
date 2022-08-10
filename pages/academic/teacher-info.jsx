@@ -1,14 +1,20 @@
-import { useRouter } from "next/router";
 import React from "react";
 import { Banner } from "../../components";
 import Teachers from "./Teachers";
 
 const TeacherInfo = () => {
-  const router = useRouter();
-
   return (
     <div>
-      <Banner path={router.asPath} />
+      <Banner
+        /* Sending different values for showing alternative text and hiding the button from the banner */
+        path={{
+          btn: false,
+          textAlter: true,
+          imageAlter: true,
+          heightAlter: true,
+        }}
+        navPath={true}
+      />
       <Teachers />
     </div>
   );

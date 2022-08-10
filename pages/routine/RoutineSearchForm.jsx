@@ -40,7 +40,7 @@ const RoutineSearchForm = ({ actions }) => {
             name='class'
             id='class'
             ref={classRef}>
-            <option value='' disabled selected>
+            <option disabled selected>
               Please Select
             </option>
             <option value='One'>Class 1</option>
@@ -67,7 +67,7 @@ const RoutineSearchForm = ({ actions }) => {
             name='class'
             id='class'
             ref={sectionRef}>
-            <option value='' disabled selected>
+            <option disabled selected>
               Please Select
             </option>
             <option value='section A'>Section A</option>
@@ -94,7 +94,7 @@ const RoutineSearchForm = ({ actions }) => {
             name='class'
             id='class'
             ref={groupRef}>
-            <option value='' disabled selected>
+            <option disabled selected>
               Please Select
             </option>
             <option value='Science'>Science</option>

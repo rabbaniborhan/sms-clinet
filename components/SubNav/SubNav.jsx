@@ -12,12 +12,16 @@ import {
 // <---------------The parent component is Banner.jsx---------------------->
 
 const SubNav = ({ path }) => {
+  const subNavColor =
+    path === "/routine/class-routine"
+      ? "bg-primary px-20"
+      : path === "/routine/exam-routine"
+      ? "bg-primary px-20"
+      : "py-5 px-2.5";
   return (
     <div
       // <--------------------Dynamically changing the background color of the subnav as per the path got form the props-------------------->
-      className={`flex justify-between items-center w-full  ${
-        path === "/routine/class-routine" ? "bg-primary px-20" : "py-5 px-2.5"
-      }`}>
+      className={`flex justify-between items-center w-full  ${subNavColor}`}>
       <div className='flex justify-between items-center'>
         <a href='/'>
           <Image src={images.logo} width={150} />

@@ -1,21 +1,23 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { useState } from "react";
 import { Navbar, SubNav } from "../../components";
-import ClassRoutine from "./ClassRoutine";
+import ExamRoutine from "./ExamRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
 
-const ClassRoutinePage = () => {
+const ExamRoutinePage = () => {
+  const router = useRouter();
   const [searchData, setSearchData] = useState({});
 
   return (
     <div>
       <SubNav path={router.asPath} />
       <div className='w-4/5 mx-auto relative'>
-        <Navbar navPath={false} />
+        <Navbar path={router.asPath} />
         <div className=' py-20 my-20'>
           <div>
             <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
-              Class Routine
+              Exam Routine
             </h2>
             <div className='mb-10'>
               <div className='flex justify-center items-center'>
@@ -38,7 +40,7 @@ const ClassRoutinePage = () => {
           </div>
 
           {searchData.class ? (
-            <ClassRoutine state={searchData} />
+            <ExamRoutine state={searchData} />
           ) : (
             <RoutineSearchForm
               actions={{ state: searchData, setState: setSearchData }}
@@ -50,4 +52,4 @@ const ClassRoutinePage = () => {
   );
 };
 
-export default ClassRoutinePage;
+export default ExamRoutinePage;
