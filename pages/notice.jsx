@@ -13,6 +13,7 @@ const notice = () => {
           heightAlter: true,
         }}
         navPath={true}
+        subPath={true}
       />
       <Table />
     </div>

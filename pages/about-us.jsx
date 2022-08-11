@@ -18,6 +18,7 @@ const AboutUs = () => {
           textAlter: false,
         }}
         navPath={true}
+        subPath={true}
       />
       <InfoSection />
       <StatisticsSection />

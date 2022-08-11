@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Navbar, SubNav } from "../../components";
+import { LayoutSecond, Navbar, SubNav } from "../../components";
 import ClassRoutine from "./ClassRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
 
@@ -8,10 +8,8 @@ const ClassRoutinePage = () => {
   const [searchData, setSearchData] = useState({});
 
   return (
-    <div>
-      <SubNav path={router.asPath} />
-      <div className='w-4/5 mx-auto relative'>
-        <Navbar navPath={false} />
+    <LayoutSecond>
+      <div className='w-4/5 mx-auto'>
         <div className=' py-20 my-20'>
           <div>
             <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
@@ -46,7 +44,7 @@ const ClassRoutinePage = () => {
           )}
         </div>
       </div>
-    </div>
+    </LayoutSecond>
   );
 };
 

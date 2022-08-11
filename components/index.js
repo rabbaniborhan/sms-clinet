@@ -9,3 +9,4 @@ export { default as StatisticsSection } from "./StatisticsSection/StatisticsSect
 export { default as PrincipalSection } from "./PrincipalSection/PrincipalSection";
 export { default as Footer } from "./Footer/Footer";
 export { default as Pagination } from "./Pagination/Pagination";
+export { default as LayoutSecond } from "./LayoutSecond/LayoutSecond";

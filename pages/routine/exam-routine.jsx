@@ -1,19 +1,15 @@
-import { useRouter } from "next/router";
 import React from "react";
 import { useState } from "react";
-import { Navbar, SubNav } from "../../components";
+import { LayoutSecond, Navbar, SubNav } from "../../components";
 import ExamRoutine from "./ExamRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
 
 const ExamRoutinePage = () => {
-  const router = useRouter();
   const [searchData, setSearchData] = useState({});
 
   return (
-    <div>
-      <SubNav path={router.asPath} />
+    <LayoutSecond>
       <div className='w-4/5 mx-auto relative'>
-        <Navbar path={router.asPath} />
         <div className=' py-20 my-20'>
           <div>
             <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
@@ -48,7 +44,7 @@ const ExamRoutinePage = () => {
           )}
         </div>
       </div>
-    </div>
+    </LayoutSecond>
   );
 };
 

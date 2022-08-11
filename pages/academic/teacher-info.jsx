@@ -14,6 +14,7 @@ const TeacherInfo = () => {
           heightAlter: true,
         }}
         navPath={true}
+        subPath={true}
       />
       <Teachers />
     </div>

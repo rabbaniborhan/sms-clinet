@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import {
   Banner,
   InfoSection,
@@ -21,11 +20,9 @@ const Home = () => {
         /* Sending different values for showing alternative text and hiding the button from the banner */
         path={{
           btn: true,
-          textAlter: false,
-          imageAlter: false,
-          heightAlter: false,
         }}
         navPath={true}
+        subPath={true}
       />
       <LatestNews />
       <Table />

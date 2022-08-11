@@ -14,6 +14,7 @@ const Contact = () => {
           heightAlter: true,
         }}
         navPath={true}
+        subPath={true}
       />
       <ContactDetails />
     </div>

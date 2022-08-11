@@ -9,9 +9,7 @@ const Navbar = ({ navPath }) => {
     // <--------------------Dynamically changing the background color of the navbar as per the path got form the props-------------------->
     <div
       className={`mx-auto w-full z-10 ${
-        navPath
-          ? "bg-navbar text-white"
-          : "bg-navbar-2 text-primary-color -my-16"
+        navPath ? "bg-navbar text-white" : "bg-navbar-2 text-primary-color my-6"
       } pl-2 py-2.5 h-16 rounded-tl rounded-bl flex justify-between items-center shadow-xl absolute`}>
       <ul className='flex justify-around items-center list-none p-0 m-0  text-base w-full'>
         <li className='hover:text-hover px-1'>
@@ -71,7 +69,7 @@ const Navbar = ({ navPath }) => {
               <Link href='#'>Admission Result</Link>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='#'>School Result</Link>
+              <Link href='/result/school-result'>School Result</Link>
             </li>
           </ul>
         </li>
