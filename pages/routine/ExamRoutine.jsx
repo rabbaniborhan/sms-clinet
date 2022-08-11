@@ -30,20 +30,9 @@ const ExamRoutine = ({ state }) => {
             </tr>
           </thead>
           {examRoutineData.map((item, i) => (
-            <ExamRoutineTableData
-              date={item.date}
-              day={item.day}
-              time={item.time}
-              subject={item.subject}
-            />
+            <ExamRoutineTableData key={i} data={item} />
           ))}
         </table>
-
-        <ul>
-          {[1, 2, 3, 4].map((item, i) => {
-            <li key={i}>{item}</li>;
-          })}
-        </ul>
       </div>
 
       <div className='flex justify-end items-end gap-3 w-11/12 mx-auto my-16'>
