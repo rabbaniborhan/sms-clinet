@@ -46,22 +46,19 @@
     |       └───Table.jsx
     |
     ├───constants
+    |   |
+    |   ├───fonts
+    |   |   └───NK_Mono.ttf
+    |   |
+    |   └───icons
+    |   |   └───index.js
+    |   |
     |   ├───reportCardData.js
     |   ├───routineData.js
     |   ├───tableData.js
     |   └───teacherData.js
-    |   |
-    |   ├───fonts
-    |   |   ├───NK_Mono.ttf
-    |   |
-    |   └───icons
-    |       └───index.js
     |
     ├───pages
-    |   ├───about-us.jsx
-    |   ├───index.js
-    |   ├───notice.jsx
-    |   └───_app.js
     |   |
     |   ├───academic
     |   |   ├───teacher-info.jsx
@@ -80,14 +77,19 @@
     |   |   ├───school-result.jsx
     |   |   └───SchoolResultSearchForm.jsx
     |   |
-    |   └───routine
-    |       ├───class-routine.jsx
-    |       ├───ClassRoutine.jsx
-    |       ├───ClassRoutineTableData.jsx
-    |       ├───exam-routine.jsx
-    |       ├───ExamRoutine.jsx
-    |       ├───ExamRoutineTableData.jsx
-    |       └───RoutineSearchForm.jsx
+    |   ├───routine
+    |   |   ├───class-routine.jsx
+    |   |   ├───ClassRoutine.jsx
+    |   |   ├───ClassRoutineTableData.jsx
+    |   |   ├───exam-routine.jsx
+    |   |   ├───ExamRoutine.jsx
+    |   |   ├───ExamRoutineTableData.jsx
+    |   |   └───RoutineSearchForm.jsx
+    |   |
+    |   ├───about-us.jsx
+    |   ├───index.js
+    |   ├───notice.jsx
+    |   └───_app.js
     |
     └───styles
         └───globals.css
