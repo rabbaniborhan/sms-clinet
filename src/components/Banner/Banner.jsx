@@ -13,16 +13,17 @@ const Banner = ({ path, navPath, subPath }) => {
         <Navbar navPath={navPath} />
 
         {/* Conditionally setting the height of the banner for Homepage and also for other pages */}
+
         <div
-          className={`flex justify-center items-center relative ${
-            path.heightAlter ? `h-[60vh]` : `h-[76vh]`
+          className={`flex justify-between items-center banner-height relative ${
+            path.heightAlter ? `xl:h-[60vh]` : `xl:banner-height`
           } w-full`}>
           <div className='text-white'>
             {/* Conditionally rendering the banner-texts for teacher-info and
             staff-info page or other pages */}
 
             {path.textAlter ? (
-              <div className='space-y-6 mt-10'>
+              <div className='space-y-6 mt-10 xl:text-xl'>
                 <h4 className='font-semibold text-xl'>প্রধান অধ্যক্ষ</h4>
                 <h2 className='font-bold text-4xl leading-[50px]'>
                   ড. সাবরিনা সুলতানা - <br /> পূর্ব রামপুরা স্কুল এন্ড কলেজ
@@ -36,11 +37,11 @@ const Banner = ({ path, navPath, subPath }) => {
                 </p>
               </div>
             ) : (
-              <div className='space-y-6'>
-                <h1 className='text-5xl font-bold'>
+              <div className='space-y-6 xl:space-y-10'>
+                <h1 className='lg:text-5xl font-bold xl:text-6xl'>
                   পূর্ব রামপুরা স্কুল এন্ড কলেজ
                 </h1>
-                <p className='w-3/5 leading-10'>
+                <p className='w-3/5 xl:leading-10 xl:text-xl'>
                   যে কথাকে কাজে লাগাতে চাও, তাকে কাজে লাগানোর কথা চিন্তা করার
                   আগে ভাবো, তুমি কি সেই কথার জাদুতে আচ্ছন্ন হয়ে গেছ কিনা তুমি
                   যদি নিশ্চিত হও যে, তুমি কোনো মোহাচ্ছাদিত আবহে
@@ -59,15 +60,38 @@ const Banner = ({ path, navPath, subPath }) => {
             )}
           </div>
 
-          {/* Applying image width and height as per the page url passed in the props. It applies different width and height for Homepage and other pages. Also conditionally applying image for staff-info and teacher-info page */}
-          <div className={`absolute ${path ? `right-16` : `right-[90px]`} `}>
-            <Image
-              src={path.imageAlter ? images.principalImg2 : images.headerImage}
-              alt='female-student-holding-books'
-              height={path.heightAlter ? 435 : 550}
-              width={path.heightAlter ? 320 : 380}
-            />
-          </div>
+          {/* Applying image width and height as per the page url passed in the props. It applies different image for Homepage and other pages. Also conditionally applying image for staff-info and teacher-info page */}
+          {!path.imageAlter ? (
+            <div
+              className={`absolute ${
+                path.heightAlter
+                  ? "xl:h-[585px] xl:w-[370px] -mb-3 right-20"
+                  : "xl:h-[850px] xl:w-[550px] right-10"
+              }`}>
+              <Image
+                src={images.headerImage}
+                alt='female-student-holding-books'
+                layout='fill'
+                objectFit='cover'
+              />
+            </div>
+          ) : (
+            <div
+              className={`absolute ${
+                path.heightAlter
+                  ? "xl:h-[570px] xl:w-[500px] -mb-3 -mr-9"
+                  : null
+              } lg:h-[650px] ${
+                path.imageAlter ? `right-12` : `right-[100px]`
+              } `}>
+              <Image
+                src={images.principalImg2}
+                alt='female-student-holding-books'
+                layout='fill'
+                objectFit='cover'
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

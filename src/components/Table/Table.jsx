@@ -37,7 +37,7 @@ const Table = () => {
                 {item.date}
               </td>
               <td className='px-6 py-4 border-[0.5px] border-gray-400 text-center'>
-                <button className='px-12 py-2 bg-primary text-white outline-none border-none rounded'>
+                <button className='px-6 py-1.5 bg-primary text-white outline-none border-none rounded'>
                   {item.link}
                 </button>
               </td>

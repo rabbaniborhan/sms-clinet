@@ -4,7 +4,7 @@ import images from "../../assets";
 import { classRoutineData } from "../../constants/routineData";
 import ClassRoutineTableData from "./ClassRoutineTableData";
 
-const ClassRoutine = ({ state }) => {
+const ClassRoutine = () => {
   return (
     <div>
       <div className='w-11/12 mx-auto py-10 px-10 text-primary-text bg-white'>
@@ -17,7 +17,7 @@ const ClassRoutine = ({ state }) => {
             Class Routine - 2022
             <span className='bg-gray-400 py-[1px] w-52'></span>
           </h3>
-          <p>Class - {state.class}</p>
+          <p>Class -</p>
         </div>
         <table className='w-full my-10'>
           <thead>

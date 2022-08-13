@@ -1,6 +1,9 @@
 import React from "react";
+import { Selector } from "../../components";
 
-const SchoolResultSearchForm = ({ setIsTrue }) => {
+const exams = [{ name: "Mid-Semester" }];
+
+const SchoolResultSearchForm = () => {
   return (
     <div className='w-[70%] mx-auto p-10 flex flex-col justify-center items-center bg-white'>
       <form className='flex flex-col justify-center items-center gap-10'>
@@ -16,14 +19,9 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'>
-            <option disabled selected>
-              Please Select
-            </option>
-          </select>
+
+          {/* Selector for selecting examination */}
+          <Selector data={exams} />
         </div>
 
         {/* Input for Exam Year */}
@@ -38,14 +36,9 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'>
-            <option disabled selected>
-              Please Select
-            </option>
-          </select>
+
+          {/* Selector for selecting examination year */}
+          <Selector data={exams} />
         </div>
 
         {/* Input for Class */}
@@ -60,14 +53,8 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'>
-            <option disabled selected>
-              Please Select
-            </option>
-          </select>
+          {/* Selector for selecting class */}
+          <Selector data={exams} />
         </div>
 
         {/* Input for Roll */}
@@ -85,8 +72,7 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
           <input
             type='text'
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'
+            placeholder='Enter your roll number'
           />
         </div>
 
@@ -105,8 +91,7 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
           <input
             type='text'
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'
+            placeholder='Enter your registration number'
           />
         </div>
 
@@ -114,7 +99,7 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
 
         <div className='flex justify-center items-center gap-5'>
           <button
-            className=' bg-primary py-2 w-36 rounded text-white ml-[90px]'
+            className='bg-primary py-2 w-36 rounded text-white ml-[90px]'
             onClick={() => setIsTrue(true)}>
             Search
           </button>

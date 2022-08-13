@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { LayoutSecond, Navbar, SubNav } from "../../components";
 import ExamRoutine from "./ExamRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
 
 const ExamRoutinePage = () => {
-  const [searchData, setSearchData] = useState({});
-
   return (
     <LayoutSecond>
       <div className='w-4/5 mx-auto relative'>
@@ -27,21 +24,13 @@ const ExamRoutinePage = () => {
                 <span className='bg-primary p-2 ml-[-2px] table-polygon'></span>
               </div>
 
-              {searchData.class && (
-                <p className='text-center capitalize'>
-                  class - {searchData.class}
-                </p>
-              )}
+              <p className='text-center capitalize'>class -</p>
             </div>
           </div>
 
-          {searchData.class ? (
-            <ExamRoutine state={searchData} />
-          ) : (
-            <RoutineSearchForm
-              actions={{ state: searchData, setState: setSearchData }}
-            />
-          )}
+          <ExamRoutine />
+
+          <RoutineSearchForm />
         </div>
       </div>
     </LayoutSecond>

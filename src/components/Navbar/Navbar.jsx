@@ -103,10 +103,10 @@ const Navbar = ({ navPath }) => {
               {/* -------------------------Submenu's submenu--------------------- */}
               <ul className='w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-0 -right-[129px] transition-all'>
                 <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-                  <Link href='#'>Class Routine</Link>
+                  <Link href='/admission/class-six'>Class - Six</Link>
                 </li>
                 <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-                  <Link href='#'>Exam Routine</Link>
+                  <Link href='/admission/class-nine'>Class - Nine</Link>
                 </li>
               </ul>
             </li>

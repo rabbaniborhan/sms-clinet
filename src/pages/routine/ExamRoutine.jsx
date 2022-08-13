@@ -4,7 +4,7 @@ import images from "../../assets";
 import { examRoutineData } from "../../constants/routineData";
 import ExamRoutineTableData from "./ExamRoutineTableData";
 
-const ExamRoutine = ({ state }) => {
+const ExamRoutine = () => {
   return (
     <div>
       <div className='w-11/12 mx-auto py-10 px-10 bg-white text-primary-text'>
@@ -17,7 +17,7 @@ const ExamRoutine = ({ state }) => {
             Exam Routine - 2022
             <span className='bg-gray-400 py-[1px] w-52'></span>
           </h3>
-          <p>Class - {state.class}</p>
+          <p>Class - </p>
         </div>
         <table className='border-collapse w-full my-10 text-gray-600 '>
           <thead>
