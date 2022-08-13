@@ -6,7 +6,7 @@ import images from "../../assets";
 
 const StatisticsSection = () => {
   return (
-    <div className='flex justify-between items-center h-[85vh] py-10 my-20 bg-primary rounded-tr-full rounded-br-full'>
+    <div className='flex justify-between items-center h-[85vh] xl:h-[79vh] py-10 my-20 bg-primary rounded-tr-full rounded-br-full'>
       <div className='w-1/2 space-y-6 pl-40'>
         <h4 className='text-white font-semibold text-xl'>
           প্রাতিষ্ঠানিক স্ট্যাটিস্টিক
@@ -22,7 +22,7 @@ const StatisticsSection = () => {
           চাও, তাকে কাজে লাগানোর কথা চিন্তা করার আগে ভাবো, তুমি কি সেই কথার
           জাদুতে আচ্ছন্ন হয়ে গেছ কিনা।
         </p>
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-start gap-x-96 items-start'>
           <div className='flex justify-center items-center gap-3'>
             <Image src={images.studentSvg} alt='student_svg' />
             <div className='flex flex-col'>
@@ -38,7 +38,7 @@ const StatisticsSection = () => {
             </div>
           </div>
         </div>
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-start gap-x-96 items-start'>
           <div className='flex justify-center items-center gap-3'>
             <Image src={images.blackboardSvg} alt='student_svg' />
             <div className='flex flex-col'>
@@ -46,7 +46,7 @@ const StatisticsSection = () => {
               <p className='text-white mt-2'>শ্রেণীকক্ষের সংখ্যা</p>
             </div>
           </div>
-          <div className='flex justify-between items-center gap-3 ml-5'>
+          <div className='flex justify-between items-center gap-3 -ml-5'>
             <Image src={images.teacherSvg} alt='blackboard_image' />
             <div className='flex flex-col justify-between'>
               <span className='text-3xl text-white font-semibold'>৫০০+</span>

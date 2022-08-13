@@ -58,7 +58,7 @@ body {
         color: #0D1530CC;
     }
 
-    .font-corsiva {
-        font-family: 'nk-monotype-corsiva-italic', sans-serif; 
+    .banner-height {
+        height: calc(100vh - 170px)
     }
 }

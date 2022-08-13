@@ -1,4 +1,7 @@
 import React from "react";
+import { Selector } from "../../components";
+
+const exams = [{ name: "Mid-Semester" }];
 
 const SchoolResultSearchForm = ({ setIsTrue }) => {
   return (
@@ -16,14 +19,9 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'>
-            <option disabled selected>
-              Please Select
-            </option>
-          </select>
+
+          {/* Selector for selecting examination */}
+          <Selector data={exams} />
         </div>
 
         {/* Input for Exam Year */}
@@ -38,14 +36,9 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'>
-            <option disabled selected>
-              Please Select
-            </option>
-          </select>
+
+          {/* Selector for selecting examination year */}
+          <Selector data={exams} />
         </div>
 
         {/* Input for Class */}
@@ -60,14 +53,8 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'>
-            <option disabled selected>
-              Please Select
-            </option>
-          </select>
+          {/* Selector for selecting class */}
+          <Selector data={exams} />
         </div>
 
         {/* Input for Roll */}
@@ -87,6 +74,7 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
             name='class'
             id='class'
+            placeholder='Enter your roll number'
           />
         </div>
 
@@ -107,6 +95,7 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
             name='class'
             id='class'
+            placeholder='Enter your registration number'
           />
         </div>
 

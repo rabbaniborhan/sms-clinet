@@ -1,12 +1,15 @@
 import React from "react";
 import { useRef } from "react";
+import { Selector } from "../../components";
+
+const classes = [{ name: "One" }, { name: "Two" }, { name: "Three" }];
+const sections = [{ name: "A" }, { name: "B" }, { name: "C" }];
+const groups = [{ name: "Science" }, { name: "Commerce" }, { name: "Arts" }];
 
 const RoutineSearchForm = ({ actions }) => {
   const classRef = useRef();
   const sectionRef = useRef();
   const groupRef = useRef();
-
-  console.log(actions);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,21 +38,9 @@ const RoutineSearchForm = ({ actions }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'
-            ref={classRef}>
-            <option disabled selected>
-              Please Select
-            </option>
-            <option value='One'>Class 1</option>
-            <option value='Two'>Class 2</option>
-            <option value='Three'>Class 3</option>
-            <option value='Four'>Class 4</option>
-            <option value='Five'>Class 5</option>
-            <option value='Six'>Class 6</option>
-          </select>
+          {/* Custom selector for selecting class */}
+
+          <Selector data={classes} />
         </div>
         <div className='flex justify-center items-center w-[500px] gap-10'>
           <label
@@ -62,21 +53,9 @@ const RoutineSearchForm = ({ actions }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'
-            ref={sectionRef}>
-            <option disabled selected>
-              Please Select
-            </option>
-            <option value='section A'>Section A</option>
-            <option value='section B'>Section B</option>
-            <option value='section C'>Section C</option>
-            <option value='section D'>Section D</option>
-            <option value='section E'>Section E</option>
-            <option value='section F'>Section F</option>
-          </select>
+          {/* Custom selector for selecting section */}
+
+          <Selector data={sections} />
         </div>
         <div className='flex justify-center items-center w-[500px] gap-10'>
           <label
@@ -89,18 +68,9 @@ const RoutineSearchForm = ({ actions }) => {
             htmlFor='class'>
             :
           </label>
-          <select
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'
-            ref={groupRef}>
-            <option disabled selected>
-              Please Select
-            </option>
-            <option value='Science'>Science</option>
-            <option value='Commerce'>Commerce</option>
-            <option value='Arts'>Arts</option>
-          </select>
+          {/* Custom selector for selecting group */}
+
+          <Selector data={groups} />
         </div>
         <button className='-ml-32 bg-primary py-2 w-36 rounded text-white'>
           Search

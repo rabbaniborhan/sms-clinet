@@ -11,7 +11,7 @@ const Teachers = () => {
       <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
         Teachers Info
       </h2>
-      <div className='mb-5'>
+      <div className='mb-5 xl:mb-10'>
         <div className='flex justify-center items-center'>
           <span className='bg-primary p-2 mr-[-2px] table-polygon'></span>
           <span className='w-72 py-[1px] bg-primary'></span>
@@ -28,7 +28,7 @@ const Teachers = () => {
           <div
             className='flex flex-col justify-center items-center space-y-2 p-6 rounded-lg shadow-2xl w-70 bg-white'
             key={i}>
-            <Image src={item.image} alt={item.name} width={200} height={200} />
+            <Image src={item.image} alt={item.name} />
             <h3 className='text-primary-color font-semibold text-xl'>
               {item.name}
             </h3>
