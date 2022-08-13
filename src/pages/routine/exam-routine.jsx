@@ -27,11 +27,7 @@ const ExamRoutinePage = () => {
                 <span className='bg-primary p-2 ml-[-2px] table-polygon'></span>
               </div>
 
-              {searchData.class && (
-                <p className='text-center capitalize'>
-                  class - {searchData.class}
-                </p>
-              )}
+              <p className='text-center capitalize'>class -</p>
             </div>
           </div>
 
