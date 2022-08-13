@@ -56,7 +56,12 @@ const StatisticsSection = () => {
         </div>
       </div>
       <div className='w-2/5 mt-1'>
-        <Image src={images.studentHoldingBooks} height={900} width={900} />
+        <Image
+          src={images.studentHoldingBooks}
+          height={900}
+          width={900}
+          layout='responsive'
+        />
       </div>
     </div>
   );

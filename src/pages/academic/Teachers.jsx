@@ -26,7 +26,7 @@ const Teachers = () => {
       <div className='flex justify-around items-center gap-5 flex-wrap w-4/5 mx-auto'>
         {teacherData.map((item, i) => (
           <div
-            className='flex flex-col justify-center items-center space-y-2 p-6 rounded-lg shadow-2xl w-70 bg-white'
+            className='flex flex-col justify-center items-center space-y-2 p-8 rounded-lg shadow-2xl w-70 bg-white'
             key={i}>
             <Image src={item.image} alt={item.name} />
             <h3 className='text-primary-color font-semibold text-xl'>

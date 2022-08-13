@@ -60,20 +60,38 @@ const Banner = ({ path, navPath, subPath }) => {
             )}
           </div>
 
-          {/* Applying image width and height as per the page url passed in the props. It applies different width and height for Homepage and other pages. Also conditionally applying image for staff-info and teacher-info page */}
-          <div
-            className={`absolute xl:h-[800px] xl:w-[520px] ${
-              path.imageAlter
-                ? "xl:h-[570px] xl:w-[440px] -mb-3"
-                : "xl:h-[800px] xl:w-[520px]"
-            } lg:h-[650px] ${path.imageAlter ? `right-16` : `right-[100px]`} `}>
-            <Image
-              src={path.imageAlter ? images.principalImg2 : images.headerImage}
-              alt='female-student-holding-books'
-              layout='fill'
-              objectFit='cover'
-            />
-          </div>
+          {/* Applying image width and height as per the page url passed in the props. It applies different image for Homepage and other pages. Also conditionally applying image for staff-info and teacher-info page */}
+          {!path.imageAlter ? (
+            <div
+              className={`absolute ${
+                path.heightAlter
+                  ? "xl:h-[585px] xl:w-[370px] -mb-3 right-20"
+                  : "xl:h-[850px] xl:w-[550px] right-10"
+              }`}>
+              <Image
+                src={images.headerImage}
+                alt='female-student-holding-books'
+                layout='fill'
+                objectFit='cover'
+              />
+            </div>
+          ) : (
+            <div
+              className={`absolute ${
+                path.heightAlter
+                  ? "xl:h-[570px] xl:w-[500px] -mb-3 -mr-9"
+                  : null
+              } lg:h-[650px] ${
+                path.imageAlter ? `right-12` : `right-[100px]`
+              } `}>
+              <Image
+                src={images.principalImg2}
+                alt='female-student-holding-books'
+                layout='fill'
+                objectFit='cover'
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

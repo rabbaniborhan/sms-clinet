@@ -1,5 +1,4 @@
 import React from "react";
-import { useRef } from "react";
 import { Selector } from "../../components";
 
 const classes = [{ name: "One" }, { name: "Two" }, { name: "Three" }];
@@ -7,26 +6,9 @@ const sections = [{ name: "A" }, { name: "B" }, { name: "C" }];
 const groups = [{ name: "Science" }, { name: "Commerce" }, { name: "Arts" }];
 
 const RoutineSearchForm = ({ actions }) => {
-  const classRef = useRef();
-  const sectionRef = useRef();
-  const groupRef = useRef();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const searchInputData = {
-      class: classRef.current.value,
-      section: sectionRef.current.value,
-      group: groupRef.current.value,
-    };
-
-    actions.setState({ ...searchInputData });
-  };
-
   return (
     <div className='w-3/5 mx-auto py-20  flex flex-col justify-center items-center bg-white'>
-      <form
-        className='flex flex-col justify-center items-center gap-10'
-        onSubmit={handleSubmit}>
+      <form className='flex flex-col justify-center items-center gap-10'>
         <div className='flex justify-center items-center w-[500px] gap-10'>
           <label
             className='font-semibold text-md text-gray-500 w-8 '
@@ -72,7 +54,9 @@ const RoutineSearchForm = ({ actions }) => {
 
           <Selector data={groups} />
         </div>
-        <button className='-ml-32 bg-primary py-2 w-36 rounded text-white'>
+        <button
+          className='-ml-32 bg-primary py-2 w-36 rounded text-white'
+          onClick={() => actions.setState(true)}>
           Search
         </button>
       </form>

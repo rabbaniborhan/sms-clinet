@@ -35,13 +35,11 @@ const ExamRoutinePage = () => {
             </div>
           </div>
 
-          {searchData.class ? (
-            <ExamRoutine state={searchData} />
-          ) : (
-            <RoutineSearchForm
-              actions={{ state: searchData, setState: setSearchData }}
-            />
-          )}
+          <ExamRoutine state={searchData} />
+
+          <RoutineSearchForm
+            actions={{ state: searchData, setState: setSearchData }}
+          />
         </div>
       </div>
     </LayoutSecond>

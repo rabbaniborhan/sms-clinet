@@ -72,8 +72,6 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
           <input
             type='text'
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'
             placeholder='Enter your roll number'
           />
         </div>
@@ -93,8 +91,6 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
           <input
             type='text'
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            name='class'
-            id='class'
             placeholder='Enter your registration number'
           />
         </div>
@@ -103,7 +99,7 @@ const SchoolResultSearchForm = ({ setIsTrue }) => {
 
         <div className='flex justify-center items-center gap-5'>
           <button
-            className=' bg-primary py-2 w-36 rounded text-white ml-[90px]'
+            className='bg-primary py-2 w-36 rounded text-white ml-[90px]'
             onClick={() => setIsTrue(true)}>
             Search
           </button>

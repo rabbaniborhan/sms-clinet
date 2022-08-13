@@ -5,7 +5,7 @@ import ClassRoutine from "./ClassRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
 
 const ClassRoutinePage = () => {
-  const [searchData, setSearchData] = useState({});
+  const [searchData, setSearchData] = useState(false);
 
   return (
     <LayoutSecond>
@@ -35,13 +35,11 @@ const ClassRoutinePage = () => {
             </div>
           </div>
 
-          {searchData.class ? (
-            <ClassRoutine state={searchData} />
-          ) : (
-            <RoutineSearchForm
-              actions={{ state: searchData, setState: setSearchData }}
-            />
-          )}
+          <ClassRoutine state={searchData} />
+
+          <RoutineSearchForm
+            actions={{ state: searchData, setState: setSearchData }}
+          />
         </div>
       </div>
     </LayoutSecond>
