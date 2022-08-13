@@ -3,7 +3,7 @@ import { Selector } from "../../components";
 
 const exams = [{ name: "Mid-Semester" }];
 
-const SchoolResultSearchForm = ({ setIsTrue }) => {
+const SchoolResultSearchForm = () => {
   return (
     <div className='w-[70%] mx-auto p-10 flex flex-col justify-center items-center bg-white'>
       <form className='flex flex-col justify-center items-center gap-10'>

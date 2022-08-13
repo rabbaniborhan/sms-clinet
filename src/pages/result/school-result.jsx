@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { LayoutSecond } from "../../components";
 import MarkSheet from "./MarkSheet";
 import SchoolResultSearchForm from "./SchoolResultSearchForm";
@@ -7,7 +6,6 @@ import SchoolResultSearchForm from "./SchoolResultSearchForm";
 // Applying a second layout for this page
 
 const SchoolResultPage = () => {
-  const [isTrue, setIsTrue] = useState(false);
   return (
     <LayoutSecond>
       <div className='w-4/5 mx-auto py-32 px-32'>

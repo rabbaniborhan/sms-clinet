@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { LayoutSecond, Navbar, SubNav } from "../../components";
 import ClassRoutine from "./ClassRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
 
 const ClassRoutinePage = () => {
-  const [searchData, setSearchData] = useState(false);
-
   return (
     <LayoutSecond>
       <div className='w-4/5 mx-auto'>
@@ -31,11 +28,9 @@ const ClassRoutinePage = () => {
             </div>
           </div>
 
-          <ClassRoutine state={searchData} />
+          <ClassRoutine />
 
-          <RoutineSearchForm
-            actions={{ state: searchData, setState: setSearchData }}
-          />
+          <RoutineSearchForm />
         </div>
       </div>
     </LayoutSecond>

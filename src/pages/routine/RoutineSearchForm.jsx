@@ -5,7 +5,7 @@ const classes = [{ name: "One" }, { name: "Two" }, { name: "Three" }];
 const sections = [{ name: "A" }, { name: "B" }, { name: "C" }];
 const groups = [{ name: "Science" }, { name: "Commerce" }, { name: "Arts" }];
 
-const RoutineSearchForm = ({ actions }) => {
+const RoutineSearchForm = () => {
   return (
     <div className='w-3/5 mx-auto py-20  flex flex-col justify-center items-center bg-white'>
       <form className='flex flex-col justify-center items-center gap-10'>
@@ -54,9 +54,7 @@ const RoutineSearchForm = ({ actions }) => {
 
           <Selector data={groups} />
         </div>
-        <button
-          className='-ml-32 bg-primary py-2 w-36 rounded text-white'
-          onClick={() => actions.setState(true)}>
+        <button className='-ml-32 bg-primary py-2 w-36 rounded text-white'>
           Search
         </button>
       </form>
