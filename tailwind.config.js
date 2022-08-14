@@ -13,10 +13,10 @@ module.exports = {
       md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      lg: "1024px",
+      lg: "1080px",
       // => @media (min-width: 1024px) { ... }
 
-      xl: "1280px",
+      xl: "1580px",
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
