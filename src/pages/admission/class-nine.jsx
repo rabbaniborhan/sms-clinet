@@ -1,7 +1,7 @@
 import React from "react";
 import { AdmissionForm, LayoutSecond } from "../../components";
 
-const ClassSixPage = () => {
+const ClassNinePage = () => {
   return (
     <LayoutSecond>
       <div className='w-4/5 mx-auto my-20 py-20'>
@@ -22,10 +22,10 @@ const ClassSixPage = () => {
             </div>
           </div>
         </div>
-        <AdmissionForm studentClass={"Six"} />
+        <AdmissionForm studentClass={"Nine"} />
       </div>
     </LayoutSecond>
   );
 };
 
-export default ClassSixPage;
+export default ClassNinePage;

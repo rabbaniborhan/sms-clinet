@@ -6,7 +6,7 @@ import images from "../../assets";
 
 const InfoSection = () => {
   return (
-    <div className='flex justify-around items-center w-4/5 h-[80vh] py-20 my-20 mx-auto'>
+    <div className='flex justify-around items-center w-4/5 h-[80vh] py-20 mt-20 mb-40 mx-auto'>
       <div className='relative w-2/5 h-2/3'>
         <div className='absolute w-[440px] h-[390px] bg-[#5BC0B7] rounded-[20px]'></div>
         <div className='absolute top-[-130px] left-[-40px]'>

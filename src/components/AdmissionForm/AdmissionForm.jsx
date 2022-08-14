@@ -5,7 +5,7 @@ import AdmissionFormColons from "./AdmissionFormColons";
 import AdmissionFormInputs from "./AdmissionFormInputs";
 import AdmissionFormLabels from "./AdmissionFormLabels";
 
-const AdmissionForm = ({ state }) => {
+const AdmissionForm = ({ studentClass }) => {
   return (
     <div>
       <div className='w-4/5 mx-auto py-10 px-10 bg-white text-primary-text'>
@@ -19,23 +19,35 @@ const AdmissionForm = ({ state }) => {
             Admission Form -2022
             <span className='bg-gray-400 py-[1px] w-52'></span>
           </h3>
-          <p>Class - Six</p>
+          <p>Class - {studentClass}</p>
         </div>
 
         {/* Admission from inputs */}
-        <div className='flex justify-between items-center w-4/5 mx-auto'>
+        <div className='flex justify-between items-center xl:w-4/5 lg:w-11/12 mx-auto mt-16'>
           <AdmissionFormLabels />
           <AdmissionFormColons />
           <AdmissionFormInputs />
         </div>
+
+        <div className='flex justify-start items-center w-4/5 mx-auto my-16 gap-6'>
+          <input
+            type='checkbox'
+            name='declaration'
+            id='declaration'
+            className='w-4 h-4 mt-0.5'
+          />
+          <label
+            htmlFor='declaration'
+            className='xl:text-lg lg:text-sm font-semibold'>
+            I declare that all the above information are correct and assure that
+            I will abide by all the rules.
+          </label>
+        </div>
       </div>
 
-      <div className='flex justify-end items-end gap-3 w-11/12 mx-auto my-16'>
-        <button className='bg-yellow text-white py-3 w-36 rounded'>
-          Print
-        </button>
+      <div className='flex justify-end items-end gap-3 w-4/5 mx-auto my-16'>
         <button className='bg-primary text-white py-3 w-36 rounded'>
-          Download
+          Submit
         </button>
       </div>
     </div>

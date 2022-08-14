@@ -1,4 +1,4 @@
-export const reportCardData = {
+const reportCardData = {
   name: "mahmudul haque",
   father: "anamul haque",
   mother: "hosneara pervin",
@@ -50,4 +50,8 @@ export const reportCardData = {
       total: "100",
     },
   ],
+};
+
+export const getReportData = () => {
+  return reportCardData;
 };

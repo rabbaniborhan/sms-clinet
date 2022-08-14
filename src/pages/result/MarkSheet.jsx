@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import images from "../../assets";
-import { reportCardData } from "../../constants/reportCardData";
 import MarkSheetTableData from "./MarkSheetTableData";
 
-const MarkSheet = () => {
+const MarkSheet = ({ reportData }) => {
+  console.log(reportData);
   return (
     <div className='w-full mx-auto'>
       <div className='w-full mx-auto pt-5 pb-1 px-10 text-primary-text bg-white'>
@@ -40,12 +40,12 @@ const MarkSheet = () => {
                 <p>:</p>
               </div>
               <div className='space-y-5 italic'>
-                <p>{reportCardData.name}</p>
-                <p>{reportCardData.father}</p>
-                <p>{reportCardData.mother}</p>
-                <p>{reportCardData.class}</p>
-                <p>{reportCardData.roll}</p>
-                <p>{reportCardData.registration}</p>
+                <p>{reportData?.name}</p>
+                <p>{reportData?.father}</p>
+                <p>{reportData?.mother}</p>
+                <p>{reportData?.class}</p>
+                <p>{reportData?.roll}</p>
+                <p>{reportData?.registration}</p>
               </div>
             </div>
             <div className='font-corsiva flex justify-between capitalize'>
@@ -58,8 +58,8 @@ const MarkSheet = () => {
                 <p>:</p>
               </div>
               <div className='italic space-y-5'>
-                <p>{reportCardData.date}</p>
-                <p>{reportCardData.position}</p>
+                <p>{reportData?.date}</p>
+                <p>{reportData?.position}</p>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const MarkSheet = () => {
               </tr>
             </thead>
             {/* Mapping the table data with the ReportCardTableData component */}
-            {reportCardData.marks.map((item) => (
+            {reportData?.marks?.map((item) => (
               <MarkSheetTableData reportData={item} />
             ))}
             <tbody>
@@ -105,10 +105,10 @@ const MarkSheet = () => {
                 <td
                   colSpan={2}
                   className='text-center font-bold text-md border-[0.5px] border-gray-500'>
-                  {reportCardData.totalOf}
+                  {reportData?.totalOf}
                 </td>
                 <td className='text-center font-bold text-md absolute top-1/2 right-4'>
-                  {reportCardData.gpa}
+                  {reportData?.gpa}
                 </td>
               </tr>
             </tbody>

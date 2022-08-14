@@ -1,4 +1,4 @@
-export const classRoutineData = [
+const classRoutineData = [
   {
     time: "7:00 - 7:40 am",
     day: "Saturday",
@@ -37,7 +37,7 @@ export const classRoutineData = [
   },
 ];
 
-export const examRoutineData = [
+const examRoutineData = [
   {
     date: "24/07/2022",
     day: "Sunday",
@@ -93,3 +93,11 @@ export const examRoutineData = [
     subject: "Bangla 1st Paper",
   },
 ];
+
+export const getAllData = () => {
+  return examRoutineData;
+};
+
+export const getClassRoutineData = () => {
+  return classRoutineData;
+};
