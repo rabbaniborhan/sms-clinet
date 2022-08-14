@@ -1,17 +1,18 @@
 import React from "react";
 import { LayoutSecond } from "../../components";
+import { getReportData } from "../../constants/reportCardData";
 import MarkSheet from "./MarkSheet";
 import SchoolResultSearchForm from "./SchoolResultSearchForm";
 
 // Applying a second layout for this page
 
-const SchoolResultPage = () => {
+const SchoolResultPage = ({ reportData }) => {
   return (
     <LayoutSecond>
       <div className='w-4/5 mx-auto py-32 px-32'>
         <div>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
-            {!isTrue ? "Search Result Marksheet" : "Student Marksheet"}
+            "Search Result Marksheet"
           </h2>
           <div className='mb-10'>
             <div className='flex justify-center items-center'>
@@ -27,14 +28,23 @@ const SchoolResultPage = () => {
           </div>
         </div>
 
-        {!isTrue ? (
-          <SchoolResultSearchForm setIsTrue={setIsTrue} />
-        ) : (
-          <MarkSheet />
-        )}
+        <SchoolResultSearchForm />
+
+        <MarkSheet reportData={reportData} />
       </div>
     </LayoutSecond>
   );
 };
+
+export async function getStaticProps() {
+  const reportData = await getReportData();
+
+  return {
+    props: {
+      reportData: reportData,
+    },
+    revalidate: 30,
+  };
+}
 
 export default SchoolResultPage;

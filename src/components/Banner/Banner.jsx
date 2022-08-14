@@ -16,19 +16,19 @@ const Banner = ({ path, navPath, subPath }) => {
 
         <div
           className={`flex justify-between items-center banner-height relative ${
-            path.heightAlter ? `xl:h-[60vh]` : `xl:banner-height`
+            path.heightAlter ? `lg:h-[60vh]` : `lg:banner-height`
           } w-full`}>
           <div className='text-white'>
             {/* Conditionally rendering the banner-texts for teacher-info and
             staff-info page or other pages */}
 
             {path.textAlter ? (
-              <div className='space-y-6 mt-10 xl:text-xl'>
+              <div className='space-y-6 mt-10'>
                 <h4 className='font-semibold text-xl'>প্রধান অধ্যক্ষ</h4>
-                <h2 className='font-bold text-4xl leading-[50px]'>
+                <h2 className='font-bold lg:text-4xl lg:leading-[50px] xl:text-5xl xl:leading-[70px]'>
                   ড. সাবরিনা সুলতানা - <br /> পূর্ব রামপুরা স্কুল এন্ড কলেজ
                 </h2>
-                <p className='leading-10 w-3/5'>
+                <p className='w-3/5 lg:text-md lg:leading-[30px] xl:text-xl xl:leading-[40px]'>
                   যে কথাকে কাজে লাগাতে চাও, তাকে কাজে লাগানোর কথা চিন্তা করার
                   আগে ভাবো, তুমি কি সেই কথার জাদুতে আচ্ছন্ন হয়ে গেছ কিনা। তুমি
                   যদি নিশ্চিত হও যে, তুমি কোনো মোহাচ্ছাদিত আবহে আবিষ্ট হয়ে
@@ -41,7 +41,7 @@ const Banner = ({ path, navPath, subPath }) => {
                 <h1 className='lg:text-5xl font-bold xl:text-6xl'>
                   পূর্ব রামপুরা স্কুল এন্ড কলেজ
                 </h1>
-                <p className='w-3/5 xl:leading-10 xl:text-xl'>
+                <p className='w-3/5 lg:leading-[30px] xl:leading-[40px] xl:text-xl'>
                   যে কথাকে কাজে লাগাতে চাও, তাকে কাজে লাগানোর কথা চিন্তা করার
                   আগে ভাবো, তুমি কি সেই কথার জাদুতে আচ্ছন্ন হয়ে গেছ কিনা তুমি
                   যদি নিশ্চিত হও যে, তুমি কোনো মোহাচ্ছাদিত আবহে
@@ -65,8 +65,8 @@ const Banner = ({ path, navPath, subPath }) => {
             <div
               className={`absolute ${
                 path.heightAlter
-                  ? "xl:h-[585px] xl:w-[370px] -mb-3 right-20"
-                  : "xl:h-[850px] xl:w-[550px] right-10"
+                  ? "lg:h-[430px] lg:w-[320px] xl:h-[585px] xl:w-[370px] xl:-mb-3 right-20"
+                  : "lg:h-[550px] lg:w-[420px] xl:h-[850px] xl:w-[550px] right-10"
               }`}>
               <Image
                 src={images.headerImage}
@@ -81,9 +81,7 @@ const Banner = ({ path, navPath, subPath }) => {
                 path.heightAlter
                   ? "xl:h-[570px] xl:w-[500px] -mb-3 -mr-9"
                   : null
-              } lg:h-[650px] ${
-                path.imageAlter ? `right-12` : `right-[100px]`
-              } `}>
+              } lg:h-[430px] lg:w-[360px] lg:right-24 xl:right-12`}>
               <Image
                 src={images.principalImg2}
                 alt='female-student-holding-books'

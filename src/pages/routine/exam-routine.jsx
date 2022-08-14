@@ -1,9 +1,10 @@
 import React from "react";
-import { LayoutSecond, Navbar, SubNav } from "../../components";
+import { LayoutSecond } from "../../components";
 import ExamRoutine from "./ExamRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
+import { getAllData } from "../../../routineData";
 
-const ExamRoutinePage = () => {
+const ExamRoutinePage = ({ tableData }) => {
   return (
     <LayoutSecond>
       <div className='w-4/5 mx-auto relative'>
@@ -28,7 +29,7 @@ const ExamRoutinePage = () => {
             </div>
           </div>
 
-          <ExamRoutine />
+          <ExamRoutine tableData={tableData} />
 
           <RoutineSearchForm />
         </div>
@@ -36,5 +37,16 @@ const ExamRoutinePage = () => {
     </LayoutSecond>
   );
 };
+
+export async function getStaticProps() {
+  const tableData = await getAllData();
+
+  return {
+    props: {
+      tableData: tableData,
+    },
+    revalidate: 30,
+  };
+}
 
 export default ExamRoutinePage;

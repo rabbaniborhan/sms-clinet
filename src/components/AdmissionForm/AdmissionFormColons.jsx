@@ -2,7 +2,7 @@ import React from "react";
 
 const AdmissionFormColons = () => {
   return (
-    <div className='text-primary-text space-y-5 flex justify-start items-start flex-col text-xl'>
+    <div className='text-primary-text space-y-8 flex justify-start items-start flex-col text-xl'>
       <label htmlFor=''>:</label>
       <label htmlFor=''>:</label>
       <label htmlFor=''>:</label>

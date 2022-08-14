@@ -8,7 +8,7 @@ const ClassRoutineTableData = ({ day, teacher, subject }) => {
           {day}
         </td>
 
-        {subject.map((item, i) => (
+        {subject?.map((item, i) => (
           <td className='py-4 px-3  border-[0.5px] border-gray-400'>
             <h3 className='text-xl font-semibold'>{item}</h3>
             <span>{teacher}</span>

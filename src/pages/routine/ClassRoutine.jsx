@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import images from "../../assets";
-import { classRoutineData } from "../../constants/routineData";
 import ClassRoutineTableData from "./ClassRoutineTableData";
 
-const ClassRoutine = () => {
+const ClassRoutine = ({ classRoutineData }) => {
   return (
     <div>
       <div className='w-11/12 mx-auto py-10 px-10 text-primary-text bg-white'>
@@ -25,7 +24,7 @@ const ClassRoutine = () => {
               <th className='text-2xl border-[0.5px] border-gray-400 py-2 px-10'>
                 Day
               </th>
-              {classRoutineData.map((item, i) => (
+              {classRoutineData?.map((item, i) => (
                 <th
                   className='border-[0.5px] border-gray-400 py-2 px-3'
                   key={i}>
@@ -35,7 +34,7 @@ const ClassRoutine = () => {
             </tr>
           </thead>
 
-          {classRoutineData.map((item, i) => (
+          {classRoutineData?.map((item, i) => (
             <ClassRoutineTableData
               day={item.day}
               teacher={item.teacher}

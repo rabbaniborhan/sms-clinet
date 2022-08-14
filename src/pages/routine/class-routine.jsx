@@ -1,9 +1,10 @@
 import React from "react";
-import { LayoutSecond, Navbar, SubNav } from "../../components";
+import { LayoutSecond } from "../../components";
 import ClassRoutine from "./ClassRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
+import { getClassRoutineData } from "../../../routineData";
 
-const ClassRoutinePage = () => {
+const ClassRoutinePage = ({ classRoutineData }) => {
   return (
     <LayoutSecond>
       <div className='w-4/5 mx-auto'>
@@ -28,7 +29,7 @@ const ClassRoutinePage = () => {
             </div>
           </div>
 
-          <ClassRoutine />
+          <ClassRoutine classRoutineData={classRoutineData} />
 
           <RoutineSearchForm />
         </div>
@@ -36,5 +37,16 @@ const ClassRoutinePage = () => {
     </LayoutSecond>
   );
 };
+
+export async function getStaticProps() {
+  const classRoutineData = await getClassRoutineData();
+
+  return {
+    props: {
+      classRoutineData: classRoutineData,
+    },
+    revalidate: 30,
+  };
+}
 
 export default ClassRoutinePage;

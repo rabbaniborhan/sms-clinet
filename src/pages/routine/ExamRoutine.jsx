@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import images from "../../assets";
-import { examRoutineData } from "../../constants/routineData";
 import ExamRoutineTableData from "./ExamRoutineTableData";
+import { getAllData } from "../../../routineData";
+import { examRoutineData } from "../../../routineData";
 
-const ExamRoutine = () => {
+const ExamRoutine = ({ tableData }) => {
   return (
     <div>
       <div className='w-11/12 mx-auto py-10 px-10 bg-white text-primary-text'>
@@ -29,7 +30,7 @@ const ExamRoutine = () => {
               </th>
             </tr>
           </thead>
-          {examRoutineData.map((item, i) => (
+          {tableData?.map((item, i) => (
             <ExamRoutineTableData key={i} data={item} />
           ))}
         </table>
