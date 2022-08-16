@@ -10,5 +10,5 @@ export { default as InfoSection } from "./InfoSection/InfoSection";
 export { default as Footer } from "./Footer/Footer";
 export { default as Pagination } from "./Pagination/Pagination";
 export { default as LayoutSecond } from "./LayoutSecond/LayoutSecond";
-export { default as Selector } from "./Selector/Selector";
 export { default as AdmissionForm } from "./AdmissionForm/AdmissionForm";
+export { default as Selector } from "./Selector/Selector";

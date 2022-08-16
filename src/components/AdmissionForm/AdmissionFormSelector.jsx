@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 
-export default function AdmissionFormSelector({ data }) {
+function AdmissionFormSelector({ data }) {
   const [selected, setSelected] = useState(data[0]);
 
   return (
@@ -59,3 +59,5 @@ export default function AdmissionFormSelector({ data }) {
     </div>
   );
 }
+
+export default AdmissionFormSelector;
