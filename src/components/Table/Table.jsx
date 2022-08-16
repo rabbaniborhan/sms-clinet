@@ -7,7 +7,7 @@ import { Pagination } from "../../components";
 const Table = () => {
   return (
     <div className='w-4/5 mx-auto space-y-5 py-8'>
-      <div>
+      <div className='mb-12'>
         <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
           Latest Notice
         </h2>
@@ -24,7 +24,7 @@ const Table = () => {
           </div>
         </div>
       </div>
-      <table className='border-collapse bg-white w-full mx-auto'>
+      <table className='border-collapse bg-white lg:w-4/5 xl:w-3/5 mx-auto'>
         {/* Mapping through the data.js file to generate table data */}
 
         {tableData.map((item, i) => (

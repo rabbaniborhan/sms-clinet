@@ -3,7 +3,7 @@ import { Banner, Table } from "../components";
 
 const notice = () => {
   return (
-    <div>
+    <div className='font-bangla'>
       <Banner
         /* Sending different values for showing alternative text and hiding the button from the banner */
         path={{

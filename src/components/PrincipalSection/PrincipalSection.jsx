@@ -6,7 +6,7 @@ import images from "../../assets";
 
 const PrincipalSection = () => {
   return (
-    <div className='h-[80vh] py-20 my-20 flex justify-between'>
+    <div className='lg:h-[90vh] xl:h-[60vh] lg:py-20 lg:my-20 xl:py-10 xl:mb-10 flex justify-between'>
       <div className='relative w-1/5 -mt-10'>
         <div className='w-[400px] h-[500px] absolute left-0 top-10 bg-[#A6C9CF]'>
           <div className='absolute top-[-75px] left-[168px] w-[470px]'>

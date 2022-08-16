@@ -39,16 +39,16 @@ const MarkSheet = ({ reportData }) => {
                 <p>:</p>
                 <p>:</p>
               </div>
-              <div className='space-y-5 italic'>
+              <div className='space-y-4 font-cursive font-bold text-md'>
                 <p>{reportData?.name}</p>
                 <p>{reportData?.father}</p>
                 <p>{reportData?.mother}</p>
                 <p>{reportData?.class}</p>
-                <p>{reportData?.roll}</p>
-                <p>{reportData?.registration}</p>
+                <p className='text-2xl'>{reportData?.roll}</p>
+                <p className='text-2xl'>{reportData?.registration}</p>
               </div>
             </div>
-            <div className='font-corsiva flex justify-between capitalize'>
+            <div className=' flex justify-between capitalize'>
               <div className='w-1/5 font-semibold text-base space-y-5'>
                 <p>date</p>
                 <p>position</p>
@@ -57,9 +57,9 @@ const MarkSheet = ({ reportData }) => {
                 <p>:</p>
                 <p>:</p>
               </div>
-              <div className='italic space-y-5'>
-                <p>{reportData?.date}</p>
-                <p>{reportData?.position}</p>
+              <div className='font-cursive font-bold text-md space-y-5'>
+                <p className='w-16'>{reportData?.date}</p>
+                <p className='w-16'>{reportData?.position}</p>
               </div>
             </div>
           </div>

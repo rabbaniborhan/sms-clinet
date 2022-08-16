@@ -21,7 +21,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        "report-card": ["nk-monotype-corsiva-italic", "sans-serif"],
+        bangla: ["Hind Siliguri", "Poppins", "Roboto", "sans-serif"],
+        cursive: ["Meie Script", "cursive"],
       },
       colors: {
         "primary-text": "rgba(13, 21, 48, 0.8)",
