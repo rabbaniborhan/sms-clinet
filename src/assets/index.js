@@ -21,6 +21,8 @@ import teacher4 from "./teacher-4.png";
 import teacher5 from "./teacher-5.png";
 import teacher6 from "./teacher-6.png";
 import schoolLogo from "./school-logo.png";
+import qr from "./qr.png";
+import studentImage from "./ackn-image.png";
 
 const images = {
   headerImage,
@@ -46,6 +48,8 @@ const images = {
   teacher5,
   teacher6,
   schoolLogo,
+  qr,
+  studentImage,
 };
 
 export default images;
