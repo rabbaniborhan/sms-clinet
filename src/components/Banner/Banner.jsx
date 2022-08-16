@@ -52,7 +52,7 @@ const Banner = ({ path, navPath, subPath }) => {
             {/* This button area is rendered conditionally as per the page url. It only renders for the Homepage */}
             {path.btn && (
               <div className='space-x-3 mt-8'>
-                <button className='px-8 py-2 rounded-sm outline-none ring-1 ring-white bg-yellow'>
+                <button className='px-8 py-2 rounded-sm outline-none bg-yellow'>
                   Log in
                 </button>
                 <a href='/'>Learn more</a>
@@ -65,8 +65,8 @@ const Banner = ({ path, navPath, subPath }) => {
             <div
               className={`absolute ${
                 path.heightAlter
-                  ? "lg:h-[430px] lg:w-[320px] xl:h-[585px] xl:w-[370px] xl:-mb-3 right-20"
-                  : "lg:h-[550px] lg:w-[420px] xl:h-[850px] xl:w-[550px] right-10"
+                  ? "lg:h-[430px] lg:w-[320px] xl:h-[680px] xl:w-[440px] xl:-mb-3 xl:right-16 lg:right-24"
+                  : "lg:h-[590px] lg:w-[420px] xl:h-[990px] xl:w-[630px] xl:right-2 lg:right-16"
               }`}>
               <Image
                 src={images.headerImage}
@@ -78,10 +78,8 @@ const Banner = ({ path, navPath, subPath }) => {
           ) : (
             <div
               className={`absolute ${
-                path.heightAlter
-                  ? "xl:h-[570px] xl:w-[500px] -mb-3 -mr-9"
-                  : null
-              } lg:h-[430px] lg:w-[360px] lg:right-24 xl:right-12`}>
+                path.heightAlter && "xl:h-[640px] xl:w-[540px] -mb-3 -mr-10"
+              } lg:h-[430px] lg:w-[360px] lg:right-28 xl:right-16`}>
               <Image
                 src={images.principalImg2}
                 alt='female-student-holding-books'

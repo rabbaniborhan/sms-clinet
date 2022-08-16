@@ -16,7 +16,7 @@ const SubNav = ({ subPath }) => {
     <div
       // <--------------------Dynamically changing the background color of the subnav as per the path got form the props-------------------->
       className={`flex justify-between items-center w-full  ${
-        !subPath ? "bg-primary px-40" : "py-5"
+        !subPath ? "bg-primary px-40" : "py-0"
       }`}>
       <div className='flex justify-between items-center'>
         <a href='/'>

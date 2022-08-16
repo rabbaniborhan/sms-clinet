@@ -1,13 +1,6 @@
-/* @font-face {
-  font-family: 'nk-monotype-corsiva-italic', sans-serif;
-  src: url("../fonts/NK_Mono.ttf");
-  font-weight: bold;
-  font-style: italic;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@100;200;500;600;700&family=Roboto:wght@100;300;400&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Monsieur+La+Doulaise&family=Poppins:wght@100;200;500;600;700&family=Roboto:wght@100;300;400&display=swap');
 
 body {
     background: #E5E5E5;
@@ -15,6 +8,11 @@ body {
     background-repeat: repeat-y;
     background-position: contain;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @layer utilities {
     .btn-polygon {
@@ -59,6 +57,6 @@ body {
     }
 
     .banner-height {
-        height: calc(100vh - 170px)
+        height: calc(100vh - 130px)
     }
 }
