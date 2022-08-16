@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import images from "../../assets";
+import images from "../../../assets";
 import AdmissionFormColons from "./AdmissionFormColons";
 import AdmissionFormInputs from "./AdmissionFormInputs";
 import AdmissionFormLabels from "./AdmissionFormLabels";

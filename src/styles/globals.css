@@ -48,8 +48,8 @@ body {
         background-color: rgba(91, 192, 183, 1);
     }
 
-    .bg-secondary {
-        background-color: #1EB3A6;
+    .secondary-text {
+        color: #1EB3A6;
     }
 
     .text-latest-news-color {
@@ -58,5 +58,9 @@ body {
 
     .banner-height {
         height: calc(100vh - 130px)
+    }
+
+    .file input[type="file"] {
+        display: none
     }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import AdmissionFormSelector from "./AdmissionFormSelector";
-import classes from "./AdmissionFormInputCustom.module.css";
 
 const StudentClass = [{ name: "Class Six" }, { name: "Class Nine" }];
 
@@ -138,7 +137,7 @@ const AdmissionFormInputs = () => {
       />
       <label
         htmlFor='file'
-        className={`${classes.file}  w-[600px] rounded rounded-tl-none rounded-bl-none ring-2 ring-gray-300 outline-none flex justify-start items-start gap-1`}>
+        className='file w-[600px] rounded rounded-tl-none rounded-bl-none ring-2 ring-gray-300 outline-none flex justify-start items-start gap-1'>
         <span className='px-10 xl:py-2 lg:py-1.5 bg-[#EFEFEF]'>
           Choose File
         </span>
