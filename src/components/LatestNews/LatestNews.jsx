@@ -9,7 +9,7 @@ const LatestNews = () => {
       <div className='w-[9.43%] bg-yellow py-4 text-center font-semibold text-white ring-1 ring-white'>
         <p>Latest News</p>
       </div>
-      <div className='w-11/12 py-4 text-center bg-secondary flex justify-between items-center'>
+      <div className='w-11/12 py-4 text-center bg-[#1EB3A6] flex justify-between items-center'>
         <marquee>
           <div className='flex gap-5 items-center text-white'>
             <p className='flex items-center gap-2'>
