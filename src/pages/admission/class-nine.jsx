@@ -1,5 +1,6 @@
 import React from "react";
-import { AdmissionForm, LayoutSecond } from "../../components";
+import { LayoutSecond } from "../../components";
+import AdmissionForm from "./AdmissionForm/AdmissionForm";
 
 const ClassNinePage = () => {
   return (
