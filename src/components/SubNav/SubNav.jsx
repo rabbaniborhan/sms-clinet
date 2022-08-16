@@ -28,11 +28,11 @@ const SubNav = ({ subPath }) => {
           <Image src={images.playStore} width={120} />
         </a>
         <div className='flex justify-around items-center gap-5'>
-          <span className='flex justify-center items-center text-white font-semibold text-lg gap-2'>
-            <Telephone className='text-md text-white' /> 01944054129
+          <span className='flex justify-center items-center text-white font-semibold text-md gap-1'>
+            <Telephone className='text-white' /> 01944054129
           </span>
-          <span className='flex justify-center items-center text-white font-semibold text-lg gap-2'>
-            <Telephone className='text-md text-white' /> 01844054129
+          <span className='flex justify-center items-center text-white font-semibold text-md gap-1'>
+            <Telephone className='text-white' /> 01844054129
           </span>
         </div>
         <div className='flex justify-center items-center gap-2'>

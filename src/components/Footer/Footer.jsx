@@ -35,23 +35,27 @@ const Footer = () => {
           </div>
           <div className='flex flex-col gap-3'>
             <h3 className='text-xl font-bold'>What We Do</h3>
-            <Link href='/'>Courses</Link>
-            <Link href='/'>Products</Link>
-            <Link href='/'>Projects</Link>
-            <Link href='/'>Services</Link>
-            <Link href='/'>Laboratory</Link>
-            <Link href='/'>Research</Link>
+            <div className='flex flex-col justify-start items-start gap-3 text-sm'>
+              <Link href='/'>Courses</Link>
+              <Link href='/'>Products</Link>
+              <Link href='/'>Projects</Link>
+              <Link href='/'>Services</Link>
+              <Link href='/'>Laboratory</Link>
+              <Link href='/'>Research</Link>
+            </div>
           </div>
           <div className='flex flex-col gap-3'>
             <h3 className='text-xl font-bold'>Our Institute</h3>
-            <Link href='/'>Home</Link>
-            <Link href='/'>About Us</Link>
-            <Link href='/'>Notice Board</Link>
-            <Link href='/'>Institution</Link>
-            <Link href='/'>Student</Link>
-            <Link href='/'>Teacher</Link>
+            <div className='flex flex-col justify-start items-start gap-3 text-sm'>
+              <Link href='/'>Home</Link>
+              <Link href='/'>About Us</Link>
+              <Link href='/'>Notice Board</Link>
+              <Link href='/'>Institution</Link>
+              <Link href='/'>Student</Link>
+              <Link href='/'>Teacher</Link>
+            </div>
           </div>
-          <div className='flex flex-col gap-3 mt-[-4.45rem]'>
+          <div className='flex flex-col gap-3 -mt-[3rem]'>
             <h3 className='text-xl font-bold'>Our Contact</h3>
             <span>SMS– 20853 – Biassono (MB) Via dei Gelsi, 41/43</span>
             <span className='flex items-center justify-start gap-2'>
