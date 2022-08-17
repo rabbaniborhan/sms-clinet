@@ -1,14 +1,15 @@
 import React from "react";
-import { LayoutSecond } from "../../components";
-import AdmissionPaymentForm from "./AdmissionPayment/AdmissionPaymentForm";
+import AcknowledgementSlip from "./AcknowledgementSlip";
+import { LayoutSecond } from "../../../components";
+import AcknowledgementInst from "./AcknowledgementInst";
 
-const AdmissionPaymentPage = () => {
+const Acknowledgement = () => {
   return (
     <LayoutSecond>
-      <div className='w-4/5 mx-auto my-20 py-20'>
+      <div className='w-4/5 mx-auto py-20 my-20'>
         <div>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
-            Admission Payment Form
+            Acknowledgement Slip
           </h2>
           <div className='mb-10'>
             <div className='flex justify-center items-center'>
@@ -23,12 +24,11 @@ const AdmissionPaymentPage = () => {
             </div>
           </div>
         </div>
-
-        {/* Admission payment form  */}
-        <AdmissionPaymentForm />
+        <AcknowledgementInst />
+        <AcknowledgementSlip />
       </div>
     </LayoutSecond>
   );
 };
 
-export default AdmissionPaymentPage;
+export default Acknowledgement;
