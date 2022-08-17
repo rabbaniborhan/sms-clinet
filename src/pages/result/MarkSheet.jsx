@@ -128,7 +128,7 @@ const MarkSheet = ({ reportData }) => {
         </div>
       </div>
 
-      <div className='flex justify-end items-end gap-3 w-11/12 mx-auto my-16'>
+      <div className='flex justify-end items-end gap-3 w-full mx-auto my-16'>
         <button className='bg-yellow text-white py-3 w-36 rounded'>
           Print
         </button>
