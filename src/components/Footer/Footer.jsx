@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div>
       <div className='bg-[#1EB3A6] text-white py-14 relative'>
-        <div className='absolute -top-10 right-0'>
+        <div className='absolute -top-20 right-0'>
           <Image src={images.footerBg} />
         </div>
         <div className='w-4/5 mx-auto flex justify-between gap-3 items-center'>

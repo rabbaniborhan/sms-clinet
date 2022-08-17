@@ -2,14 +2,19 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 
-export default function Selector({ data }) {
+export default function Selector({ data, style }) {
   const [selected, setSelected] = useState(data[0]);
 
   return (
     <div>
       <Listbox value={selected} onChange={setSelected}>
         <div className='relative mt-1'>
-          <Listbox.Button className='relative cursor-default px-2 py-2 w-96 rounded ring-2 ring-gray-300 outline-none text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm'>
+          <Listbox.Button
+            className={`relative cursor-default ${
+              style
+                ? `px-2 w-96 py-3 ring-2`
+                : `px-2 py-2 w-96 rounded ring-2 shadow-md`
+            } ring-gray-300 outline-none text-left  focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm`}>
             <span className='block truncate'>{selected.name}</span>
             <span className='pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2'>
               <SelectorIcon
