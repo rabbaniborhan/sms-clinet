@@ -111,19 +111,15 @@ const Navbar = ({ navPath }) => {
               </ul>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='/admission/payment'>Admission Payment</Link>
-            </li>
-            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='/admission/admission-payment'>Payment Form</Link>
-            </li>
-            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='/admission/payment-slip'>Payment Slip</Link>
+              <Link href='/admission/admission-payment'>Admission Payment</Link>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
               <Link href='#'>School Payment</Link>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='#'>Admission Admit Card</Link>
+              <Link href='/admission/admission-admit-card'>
+                Admission Admit Card
+              </Link>
             </li>
           </ul>
         </li>
