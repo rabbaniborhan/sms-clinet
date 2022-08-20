@@ -1,21 +1,20 @@
 import React from "react";
-import { Selector } from "../../components";
+import { LayoutSecond, Selector } from "../../../components";
 
-const exams = [{ name: "Mid-Semester" }];
-
-const SchoolResultSearchForm = () => {
+const AdmissionTestResultSearchForm = () => {
+  const exams = [{ name: "Mid-Semester" }];
   return (
-    <div className='w-[70%] mx-auto p-10 flex flex-col justify-center items-center bg-white'>
+    <div className='w-[55%] mx-auto p-10 flex flex-col justify-center items-center bg-white'>
       <form className='flex flex-col justify-center items-center gap-10'>
         {/* Input for Examination */}
         <div className='flex justify-between items-center w-[550px] '>
           <label
-            className='font-semibold text-md text-gray-500 w-18'
+            className='font-semibold text-md text-gray-500 w-36'
             htmlFor='class'>
             Examination
           </label>
           <label
-            className='font-semibold text-md text-gray-500 w-14'
+            className='font-semibold text-md text-gray-500 w-5'
             htmlFor='class'>
             :
           </label>
@@ -27,12 +26,12 @@ const SchoolResultSearchForm = () => {
         {/* Input for Exam Year */}
         <div className='flex justify-between items-center w-[550px] '>
           <label
-            className='font-semibold text-md text-gray-500 w-18'
+            className='font-semibold text-md text-gray-500 w-36'
             htmlFor='class'>
             Exam Year
           </label>
           <label
-            className='font-semibold text-md text-gray-500 -ml-10'
+            className='font-semibold text-md text-gray-500 w-5'
             htmlFor='class'>
             :
           </label>
@@ -42,9 +41,9 @@ const SchoolResultSearchForm = () => {
         </div>
 
         {/* Input for Class */}
-        <div className='flex justify-between items-center w-[550px] gap-10'>
+        <div className='flex justify-between items-center w-[550px]'>
           <label
-            className='font-semibold text-md text-gray-500 w-[55px]'
+            className='font-semibold text-md text-gray-500 w-36'
             htmlFor='class'>
             Class
           </label>
@@ -57,12 +56,12 @@ const SchoolResultSearchForm = () => {
           <Selector data={exams} />
         </div>
 
-        {/* Input for Roll */}
-        <div className='flex justify-between items-center w-[550px] gap-10'>
+        {/* Input for applicant */}
+        <div className='flex justify-between items-center w-[550px]'>
           <label
-            className='font-semibold text-md text-gray-500 w-14'
+            className='font-semibold text-md text-gray-500 w-36'
             htmlFor='class'>
-            Roll
+            Application ID
           </label>
           <label
             className='font-semibold text-md text-gray-500 w-5'
@@ -72,16 +71,16 @@ const SchoolResultSearchForm = () => {
           <input
             type='text'
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            placeholder='Enter your roll number'
+            placeholder='Enter your applicant id'
           />
         </div>
 
-        {/* Input for Registration */}
-        <div className='flex justify-between items-center w-[550px] gap-10'>
+        {/* Input for password */}
+        <div className='flex justify-between items-center w-[550px]'>
           <label
-            className='font-semibold text-md text-gray-500 w-14'
+            className='font-semibold text-md text-gray-500 w-36'
             htmlFor='class'>
-            Registration
+            Password
           </label>
           <span
             className='font-semibold text-md text-gray-500 w-5'
@@ -91,7 +90,7 @@ const SchoolResultSearchForm = () => {
           <input
             type='text'
             className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
-            placeholder='Enter your registration number'
+            placeholder='Enter your Password'
           />
         </div>
 
@@ -112,4 +111,4 @@ const SchoolResultSearchForm = () => {
   );
 };
 
-export default SchoolResultSearchForm;
+export default AdmissionTestResultSearchForm;
