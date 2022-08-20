@@ -66,7 +66,7 @@ const Navbar = ({ navPath }) => {
           {/* -------------------------Submenu--------------------------- */}
           <ul className=' w-40 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 left-0 transition-all'>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='#'>Admission Result</Link>
+              <Link href='/result/admission-result'>Admission Result</Link>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
               <Link href='/result/school-result'>School Result</Link>
@@ -114,7 +114,7 @@ const Navbar = ({ navPath }) => {
               <Link href='/admission/admission-payment'>Admission Payment</Link>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
-              <Link href='#'>School Payment</Link>
+              <Link href='/admission/school-payment'>School Payment</Link>
             </li>
             <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
               <Link href='/admission/admission-admit-card'>

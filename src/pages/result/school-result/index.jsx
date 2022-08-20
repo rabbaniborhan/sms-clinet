@@ -1,6 +1,6 @@
 import React from "react";
-import { LayoutSecond } from "../../components";
-import { getReportData } from "../../constants/reportCardData";
+import { LayoutSecond } from "../../../components";
+import { getReportData } from "../../../constants/reportCardData";
 import MarkSheet from "./MarkSheet";
 import SchoolResultSearchForm from "./SchoolResultSearchForm";
 
@@ -12,7 +12,7 @@ const SchoolResultPage = ({ reportData }) => {
       <div className='w-4/5 mx-auto py-32 px-32'>
         <div>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
-            "Search Result Marksheet"
+            Search Result Marksheet
           </h2>
           <div className='mb-10'>
             <div className='flex justify-center items-center'>
