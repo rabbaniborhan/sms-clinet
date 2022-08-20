@@ -7,7 +7,7 @@ import { Pagination } from "../../components";
 
 const Teachers = () => {
   return (
-    <div className='w-4/5 mx-auto py-20 mb-10'>
+    <div className='w-11/12 mx-auto py-20 mb-10'>
       <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
         Teachers Info
       </h2>
@@ -23,7 +23,7 @@ const Teachers = () => {
           <span className='bg-primary p-2 ml-[-2px] table-polygon'></span>
         </div>
       </div>
-      <div className='flex justify-around items-center xl:gap-10 lg:gap-8 flex-wrap w-4/5 mx-auto mt-12'>
+      <div className='flex justify-around items-center xl:gap-x-12 xl:gap-y-20 lg:gap-x-10 lg:gap-y-20 flex-wrap w-4/5 mx-auto mt-12'>
         {teacherData.map((item, i) => (
           <div
             className='flex flex-col justify-center items-center space-y-2 lg:p-6 xl:p-8 rounded-2xl shadow-2xl w-70 bg-white'
