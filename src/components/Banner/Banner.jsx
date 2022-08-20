@@ -66,7 +66,7 @@ const Banner = ({ path, navPath, subPath }) => {
               className={`absolute ${
                 path.heightAlter
                   ? "lg:h-[430px] lg:w-[320px] xl:h-[680px] xl:w-[440px] xl:-mb-3 xl:right-16 lg:right-24"
-                  : "lg:h-[590px] lg:w-[420px] xl:h-[990px] xl:w-[630px] xl:right-2 lg:right-16"
+                  : "lg:h-[600px] lg:w-[420px] xl:h-[1000px] xl:w-[650px] xl:right-0 lg:right-16"
               }`}>
               <Image
                 src={images.headerImage}
