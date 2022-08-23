@@ -2,13 +2,14 @@ import Image from "next/image";
 import React from "react";
 import images from "../../assets";
 import ExamRoutineTableData from "./ExamRoutineTableData";
-import { getAllData } from "../../../routineData";
-import { examRoutineData } from "../../../routineData";
 
 const ExamRoutine = ({ tableData }) => {
   return (
     <div>
-      <div className='w-11/12 mx-auto py-10 px-10 bg-white text-primary-text'>
+      <div className='w-9/12 mx-auto py-10 px-10 bg-white text-primary-text relative'>
+        <div className='absolute lg:top-1/3 lg:left-[160px] xl:left-[270px]'>
+          <Image src={images.bigLogo} height={600} width={600} />
+        </div>
         <div className='text-center space-y-2'>
           <Image src={images.schoolLogo} />
           <h2 className='text-3xl text-bold'>

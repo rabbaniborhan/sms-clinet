@@ -12,3 +12,5 @@ export { default as Pagination } from "./Pagination/Pagination";
 export { default as LayoutSecond } from "./LayoutSecond/LayoutSecond";
 export { default as AdmissionForm } from "./AdmissionForm/AdmissionForm";
 export { default as Selector } from "./Selector/Selector";
+export { default as Backdrop } from "./LoginPopUp/Backdrop";
+export { default as LoginPopUp } from "./LoginPopUp/LoginPopUp";

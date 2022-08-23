@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Monsieur+La+Doulaise&family=Poppins:wght@100;200;500;600;700&family=Roboto:wght@100;300;400&display=swap');
 
 body {
-    background: #e5e5e5;
+    background: #f2fbfa;
     background-image: url("../assets/bg-svg-items.svg");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: contain;
 }
 

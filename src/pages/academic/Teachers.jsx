@@ -42,7 +42,6 @@ const Teachers = () => {
           </div>
         ))}
       </div>
-      <Pagination />
     </div>
   );
 };
