@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { AdmissionForm, LayoutSecond } from "../../components";
 
 const ClassSixPage = () => {
@@ -22,7 +23,14 @@ const ClassSixPage = () => {
             </div>
           </div>
         </div>
-        <AdmissionForm studentClass={"Six"} />
+        <div className='w-4/5 mx-auto'>
+          <div className='w-full flex justify-end items-end mb-10'>
+            <a className='py-2 px-5 bg-[#1EB3A6] text-white rounded'>
+              <Link href='/admission/admission-instructions'>View details</Link>
+            </a>
+          </div>
+          <AdmissionForm studentClass={"Six"} />
+        </div>
       </div>
     </LayoutSecond>
   );

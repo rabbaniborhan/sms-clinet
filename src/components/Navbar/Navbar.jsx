@@ -13,7 +13,6 @@ const Navbar = ({ navPath, setShowModal }) => {
   const handleScroll = () => {
     if (window.scrollY >= 30) {
       setBackground(true);
-      setShowModal(false);
     } else {
       setBackground(false);
     }
@@ -30,7 +29,7 @@ const Navbar = ({ navPath, setShowModal }) => {
     // <--------------------Dynamically changing the background color of the navbar as per the path got form the props-------------------->
     <div
       className={`mx-auto w-4/5 z-10 ${
-        background ? "bg-[#1EB3A6] top-2" : "bg-navbar"
+        background ? "bg-[#1EB3A6] top-0 transition-all" : "bg-navbar"
       } ${
         navPath
           ? " text-white"

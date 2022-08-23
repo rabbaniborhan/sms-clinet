@@ -8,7 +8,7 @@ import AdmissionFormLabels from "./AdmissionFormLabels";
 const AdmissionForm = ({ studentClass }) => {
   return (
     <div>
-      <div className='w-4/5 mx-auto py-10 px-10 bg-white text-primary-text'>
+      <div className='mx-auto py-10 px-10 bg-white text-primary-text'>
         <div className='text-center space-y-3'>
           <Image src={images.schoolLogo} />
           <h2 className='text-3xl text-bold'>

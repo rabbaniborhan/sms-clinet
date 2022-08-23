@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { LayoutSecond, AdmissionForm } from "../../components";
 
@@ -22,7 +23,14 @@ const ClassNinePage = () => {
             </div>
           </div>
         </div>
-        <AdmissionForm studentClass={"Nine"} />
+        <div className='w-4/5 mx-auto'>
+          <div className='w-full flex justify-end items-end mb-10'>
+            <a className='py-2 px-5 bg-[#1EB3A6] text-white rounded'>
+              <Link href='/admission/admission-instructions'>View details</Link>
+            </a>
+          </div>
+          <AdmissionForm studentClass={"Nine"} />
+        </div>
       </div>
     </LayoutSecond>
   );
