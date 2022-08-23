@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import teacherData from "../../constants/teacherData";
-import { Pagination } from "../../components";
 
 // <---------------The parent component is teacher-info/index.jsx---------------------->
 
@@ -26,7 +25,7 @@ const Teachers = () => {
       <div className='flex justify-around items-center xl:gap-x-12 xl:gap-y-20 lg:gap-x-10 lg:gap-y-20 flex-wrap w-4/5 mx-auto mt-12'>
         {teacherData.map((item, i) => (
           <div
-            className='flex flex-col justify-center items-center space-y-2 lg:p-6 xl:p-8 rounded-2xl shadow-2xl w-70 bg-white'
+            className='flex flex-col justify-center items-center space-y-2 lg:p-6 xl:p-8 rounded-2xl shadow-md w-70 bg-white'
             key={i}>
             <Image src={item.image} alt={item.name} height={250} width={250} />
             <h3 className='text-primary-color font-semibold text-xl'>
