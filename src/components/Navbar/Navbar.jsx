@@ -13,6 +13,7 @@ const Navbar = ({ navPath, setShowModal }) => {
   const handleScroll = () => {
     if (window.scrollY >= 30) {
       setBackground(true);
+      setShowModal(false);
     } else {
       setBackground(false);
     }
