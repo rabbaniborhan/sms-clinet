@@ -5,7 +5,10 @@ import Image from "next/image";
 const AdmissionAdmitCard = () => {
   return (
     <div className='w-10/12 mx-auto'>
-      <div className='w-full mx-auto pt-5 pb-1 px-20 text-primary-text bg-white'>
+      <div className='w-full mx-auto pt-5 pb-1 px-20 text-primary-text bg-white relative'>
+        <div className='absolute lg:top-[30%] lg:left-[235px] xl:left-[350px]'>
+          <Image src={images.bigLogo} height={550} width={550} />
+        </div>
         <div className='text-center space-y-2'>
           <Image src={images.schoolLogo} />
           <h2 className='text-3xl text-bold'>
@@ -13,7 +16,7 @@ const AdmissionAdmitCard = () => {
           </h2>
           <p className='text-sm text-primary-text'>68, East Rampura, Dhaka</p>
           <h3 className='text-semibold text-xl flex flex-col justify-center items-center gap-1'>
-            Acknowledgement Slip
+            Admit Card -2022
             <span className='bg-gray-400 py-[1px] w-52'></span>
           </h3>
         </div>

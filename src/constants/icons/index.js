@@ -17,6 +17,8 @@ import {
   MdOutlineKeyboardArrowDown,
 } from "react-icons/md";
 
+import { FaTimes } from "react-icons/fa";
+
 export const Telephone = ({ className }) => {
   return <BsFillTelephoneFill className={className} />;
 };
@@ -63,4 +65,8 @@ export const ArrowRight = ({ className }) => {
 
 export const ArrowDown = ({ className }) => {
   return <MdOutlineKeyboardArrowDown className={className} />;
+};
+
+export const Cross = ({ className }) => {
+  return <FaTimes className={className} />;
 };

@@ -6,7 +6,10 @@ import AcknowledgementTable from "./AcknowledgementTable";
 const AcknowledgementSlip = () => {
   return (
     <div className='w-3/4 mx-auto '>
-      <div className='w-full mx-auto pt-5 pb-1 px-20 text-primary-text bg-white'>
+      <div className='w-full mx-auto pt-5 pb-1 px-20 text-primary-text bg-white relative'>
+        <div className='absolute lg:top-[42%] lg:left-[245px] xl:left-[350px]'>
+          <Image src={images.bigLogo} height={450} width={450} />
+        </div>
         <div className='text-center space-y-2'>
           <Image src={images.schoolLogo} />
           <h2 className='text-3xl text-bold'>

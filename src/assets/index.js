@@ -23,6 +23,7 @@ import teacher6 from "./teacher-6.png";
 import schoolLogo from "./school-logo.png";
 import qr from "./qr.png";
 import studentImage from "./ackn-image.png";
+import bigLogo from "./bigLogo.png";
 
 const images = {
   headerImage,
@@ -50,6 +51,7 @@ const images = {
   schoolLogo,
   qr,
   studentImage,
+  bigLogo,
 };
 
 export default images;

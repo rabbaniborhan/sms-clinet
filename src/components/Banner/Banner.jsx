@@ -5,12 +5,12 @@ import images from "../../assets";
 
 // <---------------The parent component is index.jsx/Homepage + teacher-info.jsx + staff-info.jsx + about-us.jsx + contact.jsx---------------------->
 
-const Banner = ({ path, navPath, subPath }) => {
+const Banner = ({ path, navPath, subPath, setShowModal }) => {
   return (
     <div className='bg-primary -z-10'>
       <div className='w-4/5 mx-auto relative overflow-hidden'>
         <SubNav subPath={subPath} />
-        <Navbar navPath={navPath} />
+        <Navbar navPath={navPath} setShowModal={setShowModal} />
 
         {/* Conditionally setting the height of the banner for Homepage and also for other pages */}
 
@@ -65,8 +65,8 @@ const Banner = ({ path, navPath, subPath }) => {
             <div
               className={`absolute ${
                 path.heightAlter
-                  ? "lg:h-[430px] lg:w-[320px] xl:h-[680px] xl:w-[440px] xl:-mb-3 xl:right-16 lg:right-24"
-                  : "lg:h-[600px] lg:w-[420px] xl:h-[1000px] xl:w-[650px] xl:right-0 lg:right-16"
+                  ? "lg:h-[350px] lg:w-[220px] lg:-mb-20 xl:h-[550px] xl:w-[360px] xl:-mb-28 xl:right-20 lg:right-32"
+                  : "lg:h-[500px] lg:w-[320px] xl:h-[800px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-20 xl:-mb-40"
               }`}>
               <Image
                 src={images.headerImage}
@@ -78,8 +78,8 @@ const Banner = ({ path, navPath, subPath }) => {
           ) : (
             <div
               className={`absolute ${
-                path.heightAlter && "xl:h-[640px] xl:w-[540px] -mb-3 -mr-10"
-              } lg:h-[430px] lg:w-[360px] lg:right-28 xl:right-16`}>
+                path.heightAlter && "xl:h-[540px] xl:w-[450px] xl:-mb-28"
+              } lg:h-[330px] lg:w-[270px] lg:-mb-24 lg:right-28 xl:right-16`}>
               <Image
                 src={images.principalImg2}
                 alt='female-student-holding-books'
