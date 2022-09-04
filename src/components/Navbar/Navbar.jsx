@@ -1,42 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowDown, ArrowRight } from "../../constants/icons";
-import { useState } from "react";
 
 // <---------------The parent component is Banner.jsx + class-routine.jsx---------------------->
 
 const Navbar = ({ navPath, setShowModal }) => {
-  // State for changing navbar background-color and position on scroll
-  const [background, setBackground] = useState(false);
-
-  // function for executing the styles on navbar on scroll
-  const handleScroll = () => {
-    if (window.scrollY >= 30) {
-      setBackground(true);
-    } else {
-      setBackground(false);
-    }
-  };
-
-  // Adding addEventListener for adding the event to the dom with checking the value of window if undefined or not.
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", handleScroll);
-  }
-
-  console.log(background);
-
   return (
     // <--------------------Dynamically changing the background color of the navbar as per the path got form the props-------------------->
     <div
-      className={`mx-auto w-4/5 z-10 ${
-        background ? "bg-[#1EB3A6] top-0 transition-all" : "bg-navbar"
-      } ${
-        navPath
-          ? " text-white"
-          : `text-primary-color my-6 bg-navbar-2 ${
-              background && "absolute w-full"
-            }`
-      }  pl-2 py-2.5 h-16 rounded-tl rounded-bl flex justify-between items-center shadow-xl fixed`}>
+      className={`mx-auto w-4/5 z-10 bg-navbar ${
+        navPath ? " text-white" : `text-primary-color my-6 bg-navbar-2`
+      }  pl-2 py-2.5 h-16 rounded-tl rounded-bl flex justify-between items-center shadow-xl absolute w-full`}>
       <ul className='flex justify-around items-center list-none p-0 m-0  text-base w-full'>
         <li className='hover:text-hover px-1'>
           <Link href='/'>Home</Link>

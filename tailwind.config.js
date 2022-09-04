@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+{
+  import("tailwindcss").Config;
+}
 
 module.exports = {
   content: [
@@ -12,7 +14,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        bangla: ["Hind Siliguri", "Poppins", "Roboto", "sans-serif"],
+        bangla: ["Kalpurush", "sans-serif"],
         cursive: ["Meie Script", "cursive"],
       },
       colors: {

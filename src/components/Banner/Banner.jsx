@@ -23,7 +23,7 @@ const Banner = ({ path, navPath, subPath, setShowModal }) => {
             staff-info page or other pages */}
 
             {path.textAlter ? (
-              <div className='space-y-6 mt-10'>
+              <div className='space-y-6 mt-10 font-bangla'>
                 <h4 className='font-semibold text-xl'>প্রধান অধ্যক্ষ</h4>
                 <h2 className='font-bold lg:text-4xl lg:leading-[50px] xl:text-5xl xl:leading-[70px]'>
                   ড. সাবরিনা সুলতানা - <br /> পূর্ব রামপুরা স্কুল এন্ড কলেজ
@@ -37,7 +37,7 @@ const Banner = ({ path, navPath, subPath, setShowModal }) => {
                 </p>
               </div>
             ) : (
-              <div className='space-y-6 xl:space-y-10'>
+              <div className='space-y-6 xl:space-y-10 font-bangla'>
                 <h1 className='lg:text-5xl font-bold xl:text-6xl'>
                   পূর্ব রামপুরা স্কুল এন্ড কলেজ
                 </h1>
@@ -69,7 +69,7 @@ const Banner = ({ path, navPath, subPath, setShowModal }) => {
               className={`absolute ${
                 path.heightAlter
                   ? "lg:h-[350px] lg:w-[220px] lg:-mb-20 xl:h-[550px] xl:w-[360px] xl:-mb-28 xl:right-20 lg:right-32"
-                  : "lg:h-[500px] lg:w-[320px] xl:h-[800px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-20 xl:-mb-40"
+                  : "lg:h-[500px] lg:w-[320px] xl:h-[800px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
                 src={images.headerImage}

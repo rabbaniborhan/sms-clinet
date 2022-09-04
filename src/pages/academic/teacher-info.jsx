@@ -4,7 +4,7 @@ import Teachers from "./Teachers";
 
 const TeacherInfo = () => {
   return (
-    <div className='font-bangla'>
+    <div>
       <Banner
         /* Sending different values for showing alternative text and hiding the button from the banner */
         path={{
