@@ -6,8 +6,8 @@ import images from "../../assets";
 
 const StatisticsSection = () => {
   return (
-    <div className='flex justify-between items-center lg:h-[90vh] xl:h-[70vh] bg-primary rounded-tr-full rounded-br-full'>
-      <div className='w-1/2 space-y-6 pl-40'>
+    <div className='flex justify-between items-center lg:h-[80vh] xl:h-[60vh] bg-primary rounded-tr-[55px] rounded-br-[55px] overflow-hidden'>
+      <div className='w-1/2 space-y-6 pl-40 font-bangla'>
         <h4 className='text-white font-semibold text-xl'>
           প্রাতিষ্ঠানিক স্ট্যাটিস্টিক
         </h4>
@@ -55,7 +55,7 @@ const StatisticsSection = () => {
           </div>
         </div>
       </div>
-      <div className='lg:w-[690px] lg:h-[690px] xl:w-[820px] xl:h-[820px] xl:mt-14 lg:mt-12'>
+      <div className='lg:w-[620px] lg:h-[620px] xl:w-[720px] xl:h-[720px] xl:mt-14 lg:mt-12 object-contain'>
         <Image src={images.studentHoldingBooks} objectFit='cover' />
       </div>
     </div>

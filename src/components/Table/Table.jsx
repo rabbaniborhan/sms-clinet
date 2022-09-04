@@ -30,10 +30,10 @@ const Table = () => {
         {tableData.map((item, i) => (
           <tbody key={i}>
             <tr>
-              <td className='px-6 py-4 border-[0.5px] border-gray-400 text-left'>
+              <td className='px-6 py-4 border-[0.5px] border-gray-400 text-left font-bangla'>
                 {item.title}
               </td>
-              <td className='px-6 py-4 border-[0.5px] border-gray-400 text-primary-color text-center'>
+              <td className='px-6 py-4 border-[0.5px] border-gray-400 text-primary-color text-center font-bangla'>
                 {item.date}
               </td>
               <td className='px-6 py-4 border-[0.5px] border-gray-400 text-center'>

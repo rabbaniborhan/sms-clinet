@@ -1,10 +1,11 @@
 import React from "react";
 import { Banner } from "../../components";
+import Maps from "../../components/Maps/Maps";
 import ContactDetails from "./ContactDetails";
 
 const Contact = () => {
   return (
-    <div className='font-bangla'>
+    <div>
       <Banner
         /* Sending different values for showing alternative text and hiding the button from the banner */
         path={{
@@ -17,6 +18,7 @@ const Contact = () => {
         subPath={true}
       />
       <ContactDetails />
+      <Maps />
     </div>
   );
 };

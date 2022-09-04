@@ -5,11 +5,11 @@ import { Youtube } from "../../constants/icons";
 
 const LatestNews = () => {
   return (
-    <div className='w-full flex justify-center items-center '>
+    <div className='w-full flex justify-center items-center fixed z-50'>
       <div className='w-[9.43%] bg-yellow py-4 text-center font-semibold text-white ring-1 ring-white'>
-        <p>Latest News</p>
+        <p className='font-sans'>Latest News</p>
       </div>
-      <div className='w-11/12 py-4 text-center bg-[#1EB3A6] flex justify-between items-center'>
+      <div className='w-11/12 py-4 text-center bg-[#1EB3A6] flex justify-between items-center font-bangla'>
         <marquee>
           <div className='flex gap-5 items-center text-white'>
             <p className='flex items-center gap-2'>

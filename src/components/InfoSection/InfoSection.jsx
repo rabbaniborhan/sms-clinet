@@ -16,7 +16,7 @@ const InfoSection = () => {
           <Image src={images.infoImage2} width={400} height={270} />
         </div>
       </div>
-      <div className='w-2/5 space-y-6 flex flex-col justify-start'>
+      <div className='w-2/5 space-y-6 flex flex-col justify-start font-bangla'>
         <h4 className='text-[#FF9900] font-semibold text-xl'>
           প্রাতিষ্ঠানিক তথ্য
         </h4>

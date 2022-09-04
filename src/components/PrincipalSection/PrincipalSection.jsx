@@ -14,7 +14,7 @@ const PrincipalSection = () => {
           </div>
         </div>
       </div>
-      <div className='w-2/4 space-y-4 flex flex-col pr-60 mt-10'>
+      <div className='w-2/4 space-y-4 flex flex-col pr-60 mt-10 font-bangla'>
         <h4 className='text-[#FF9900] font-semibold text-xl'>প্রধান অধ্যক্ষ</h4>
         <h2 className='text-[#0D1530CC] font-bold text-4xl leading-[60px]'>
           ড. সাবরিনা সুলতানা - <br /> পূর্ব রামপুরা স্কুল এন্ড কলেজ
