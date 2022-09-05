@@ -8,7 +8,7 @@ import AdmissionFormLabels from "./AdmissionFormLabels";
 const AdmissionForm = ({ studentClass }) => {
   return (
     <div>
-      <div className='mx-auto py-10 px-10 bg-white text-primary-text'>
+      <div className='mx-auto py-10 px-10 bg-white text-primary-text border border-gray-300'>
         <div className='text-center space-y-3'>
           <Image src={images.schoolLogo} />
           <h2 className='text-3xl text-bold'>
@@ -43,12 +43,11 @@ const AdmissionForm = ({ studentClass }) => {
             I will abide by all the rules.
           </label>
         </div>
-      </div>
-
-      <div className='flex justify-end items-end gap-3 w-4/5 mx-auto my-16'>
-        <button className='bg-primary text-white py-3 w-36 rounded'>
-          Submit
-        </button>
+        <div className='flex w-full justify-end items-end mx-auto mt-16 mb-5 px-8'>
+          <button className='bg-primary text-white py-3 w-36 rounded'>
+            Submit
+          </button>
+        </div>
       </div>
     </div>
   );

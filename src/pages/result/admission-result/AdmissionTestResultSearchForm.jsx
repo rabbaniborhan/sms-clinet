@@ -4,7 +4,7 @@ import { LayoutSecond, Selector } from "../../../components";
 const AdmissionTestResultSearchForm = () => {
   const exams = [{ name: "Mid-Semester" }];
   return (
-    <div className='w-[55%] mx-auto p-10 flex flex-col justify-center items-center bg-white'>
+    <div className='w-[55%] mx-auto p-10 flex flex-col justify-center items-center bg-white border border-gray-300'>
       <form className='flex flex-col justify-center items-center gap-10'>
         {/* Input for Examination */}
         <div className='flex justify-between items-center w-[550px] '>

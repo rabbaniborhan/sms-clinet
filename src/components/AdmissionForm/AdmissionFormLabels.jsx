@@ -2,7 +2,7 @@ import React from "react";
 
 const AdmissionFormLabels = () => {
   return (
-    <div className='text-primary-text xl:space-y-8 lg:space-y-9 flex justify-start items-start flex-col lg:text-md xl:text-xl'>
+    <div className='text-primary-text xl:space-y-8 lg:space-y-9 flex justify-start items-start flex-col lg:text-md xl:text-xl font-semibold'>
       <label htmlFor=''>Application for class </label>
       <label htmlFor=''>J.S.C Roll No</label>
       <label htmlFor=''>Registration No</label>

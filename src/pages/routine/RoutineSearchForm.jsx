@@ -7,7 +7,7 @@ const groups = [{ name: "Science" }, { name: "Commerce" }, { name: "Arts" }];
 
 const RoutineSearchForm = () => {
   return (
-    <div className='w-3/5 mx-auto py-20  flex flex-col justify-center items-center bg-white'>
+    <div className='w-3/5 mx-auto py-20  flex flex-col justify-center items-center bg-white border border-gray-300'>
       <form className='flex flex-col justify-center items-center gap-10'>
         <div className='flex justify-center items-center w-[500px] gap-10'>
           <label

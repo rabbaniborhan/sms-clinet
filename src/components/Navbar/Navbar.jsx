@@ -1,10 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowDown, ArrowRight } from "../../constants/icons";
+import { useState } from "react";
 
 // <---------------The parent component is Banner.jsx + class-routine.jsx---------------------->
 
 const Navbar = ({ navPath, setShowModal }) => {
+  // State for admission's submenu
+  const [show, setShow] = useState(false);
+
   return (
     // <--------------------Dynamically changing the background color of the navbar as per the path got form the props-------------------->
     <div
@@ -94,14 +98,20 @@ const Navbar = ({ navPath, setShowModal }) => {
 
           {/* -------------------------Submenu--------------------------- */}
           <ul className=' w-48 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 right-0 transition-all'>
-            <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full group relative'>
+            <li
+              className='border-b-[1px] py-2 px-3 hover:text-hover w-full group relative'
+              onMouseOver={() => setShow(true)}
+              onMouseLeave={() => setShow(false)}>
               <div className='flex justify-between items-center gap-2'>
                 <Link href='#'>Admission Form</Link>
                 <ArrowRight className='text-xl mt-1' />
               </div>
 
               {/* -------------------------Submenu's submenu--------------------- */}
-              <ul className='w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-0 -right-[129px] transition-all'>
+              <ul
+                className={`w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute top-0 -right-[129px] transition-all  ${
+                  show ? "visible" : "invisible"
+                } `}>
                 <li className='border-b-[1px] py-2 px-3 hover:text-hover w-full'>
                   <Link href='/admission/class-six'>Class - Six</Link>
                 </li>

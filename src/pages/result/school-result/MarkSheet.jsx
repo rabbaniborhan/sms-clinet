@@ -7,7 +7,7 @@ const MarkSheet = ({ reportData }) => {
   console.log(reportData);
   return (
     <div className='w-full mx-auto'>
-      <div className='w-full mx-auto pt-5 pb-1 px-10 text-primary-text bg-white relative'>
+      <div className='w-full mx-auto pt-5 pb-1 px-10 text-primary-text bg-white relative border border-gray-300'>
         <div className='absolute lg:top-1/4 lg:left-[200px] xl:left-[350px]'>
           <Image src={images.bigLogo} height={600} width={600} />
         </div>
