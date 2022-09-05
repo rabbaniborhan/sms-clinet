@@ -15,7 +15,7 @@ const Banner = ({ path, navPath, subPath, setShowModal }) => {
         {/* Conditionally setting the height of the banner for Homepage and also for other pages */}
 
         <div
-          className={`flex justify-between items-center banner-height relative ${
+          className={`flex justify-between items-end lg:pb-24 xl:pb-40 banner-height relative ${
             path.heightAlter ? `lg:h-[60vh]` : `lg:banner-height`
           } w-full`}>
           <div className='text-white'>
@@ -68,7 +68,7 @@ const Banner = ({ path, navPath, subPath, setShowModal }) => {
             <div
               className={`absolute ${
                 path.heightAlter
-                  ? "lg:h-[350px] lg:w-[220px] lg:-mb-20 xl:h-[550px] xl:w-[360px] xl:-mb-28 xl:right-20 lg:right-32"
+                  ? "lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
                   : "lg:h-[500px] lg:w-[320px] xl:h-[800px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
@@ -82,10 +82,10 @@ const Banner = ({ path, navPath, subPath, setShowModal }) => {
             <div
               className={`absolute ${
                 path.heightAlter && "xl:h-[540px] xl:w-[450px] xl:-mb-28"
-              } lg:h-[330px] lg:w-[270px] lg:-mb-24 lg:right-28 xl:right-16`}>
+              } lg:h-[330px] lg:w-[280px] lg:-mb-24 lg:right-28 xl:right-16`}>
               <Image
                 src={images.principalImg2}
-                alt='female-student-holding-books'
+                alt='Principal_image'
                 layout='fill'
                 objectFit='cover'
               />

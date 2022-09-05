@@ -61,4 +61,8 @@ body {
     .file input[type="file"] {
         display: none
     }
+
+    .placeholder-text::placeholder {
+        font-size: 12px;
+    }
 }

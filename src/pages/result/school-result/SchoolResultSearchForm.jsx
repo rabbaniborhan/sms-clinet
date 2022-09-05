@@ -5,7 +5,7 @@ const exams = [{ name: "Mid-Semester" }];
 
 const SchoolResultSearchForm = () => {
   return (
-    <div className='w-[70%] mx-auto p-10 flex flex-col justify-center items-center bg-white'>
+    <div className='w-[70%] mx-auto p-10 flex flex-col justify-center items-center bg-white border border-gray-300'>
       <form className='flex flex-col justify-center items-center gap-10'>
         {/* Input for Examination */}
         <div className='flex justify-between items-center w-[550px] '>
@@ -71,7 +71,7 @@ const SchoolResultSearchForm = () => {
           </label>
           <input
             type='text'
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
+            className='px-1 py-2 w-96 rounded ring-1 ring-gray-300 outline-none'
             placeholder='Enter your roll number'
           />
         </div>
@@ -90,7 +90,7 @@ const SchoolResultSearchForm = () => {
           </span>
           <input
             type='text'
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
+            className='px-1 py-2 w-96 rounded ring-1 ring-gray-300 outline-none'
             placeholder='Enter your registration number'
           />
         </div>

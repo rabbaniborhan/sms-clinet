@@ -46,7 +46,7 @@ const ContactDetails = () => {
 
         <form
           action='/'
-          className='p-10 bg-white shadow-xl flex flex-col justify-center items-center gap-5 text-gray-700 2/5'>
+          className='p-10 bg-white shadow-xl flex flex-col justify-center items-center gap-5 text-gray-700 2/5 border border-gray-300'>
           <input
             className='outline-none ring-1 ring-gray-400 p-2.5 w-96 '
             type='text'
