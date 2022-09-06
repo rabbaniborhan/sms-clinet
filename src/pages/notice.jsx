@@ -11,10 +11,12 @@ const notice = () => {
           textAlter: false,
           imageAlter: false,
           heightAlter: true,
+          paddingAlter: true,
         }}
         navPath={true}
         subPath={true}
       />
+
       <Table />
     </div>
   );

@@ -15,7 +15,7 @@ const AboutUs = () => {
           btn: false,
           imageAlter: false,
           heightAlter: true,
-          textAlter: false,
+          paddingAlter: true,
         }}
         navPath={true}
         subPath={true}
