@@ -9,17 +9,17 @@ const AdmitCardForm = () => {
   ];
   return (
     <div className='flex justify-between items-center bg-white py-10 px-10 w-[650px] mx-auto'>
-      <div className='flex flex-col justify-center items-start gap-11 -mt-16 font-semibold'>
+      <div className='flex flex-col justify-center items-start gap-[52px] -mt-16 font-semibold'>
         <label className='text-md text-primary-text'>Application ID</label>
         <label className='text-md text-primary-text'>Password</label>
         <label className='text-md text-primary-text'>Class</label>
       </div>
-      <div className='flex flex-col justify-center items-start gap-11 -mt-16 font-semibold'>
+      <div className='flex flex-col justify-center items-start gap-[52px] -mt-16 font-semibold'>
         <span className='text-md text-primary-text'>:</span>
         <span className='text-md text-primary-text'>:</span>
         <span className='text-md text-primary-text'>:</span>
       </div>
-      <form className='flex flex-col justify-center items-start gap-6'>
+      <form className='flex flex-col justify-center items-start gap-7'>
         <input
           className='outline-none ring-1 ring-gray-400 p-2.5 w-96'
           type='email'

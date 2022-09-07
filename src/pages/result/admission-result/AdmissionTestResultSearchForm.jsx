@@ -70,7 +70,7 @@ const AdmissionTestResultSearchForm = () => {
           </label>
           <input
             type='text'
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
+            className='px-1 py-2 w-96 rounded ring-1 ring-gray-300 outline-none'
             placeholder='Enter your applicant id'
           />
         </div>
@@ -89,7 +89,7 @@ const AdmissionTestResultSearchForm = () => {
           </span>
           <input
             type='text'
-            className='px-1 py-2 w-96 rounded ring-2 ring-gray-300 outline-none'
+            className='px-1 py-2 w-96 rounded ring-1 ring-gray-300 outline-none'
             placeholder='Enter your Password'
           />
         </div>

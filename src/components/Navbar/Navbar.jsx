@@ -3,14 +3,22 @@ import Link from "next/link";
 import { ArrowDown, ArrowRight } from "../../constants/icons";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+import { popUpActions } from "../../store/popupSlice";
 
 // <---------------The parent component is Banner.jsx + class-routine.jsx---------------------->
 
 const Navbar = ({ navPath, setShowModal }) => {
   // State for admission's submenu
   const [show, setShow] = useState(false);
-
   const router = useRouter();
+
+  const dispatch = useDispatch();
+
+  // Funciton for handling the login popUp
+  const handleShowModal = () => {
+    dispatch(popUpActions.togglePopUp());
+  };
 
   return (
     // <--------------------Dynamically changing the background color of the navbar as per the path got form the props-------------------->
@@ -209,7 +217,7 @@ const Navbar = ({ navPath, setShowModal }) => {
         className={`w-48 h-16  ${
           navPath ? "bg-white text-primary-color" : "bg-primary text-white"
         } text-md font-semibold outline-none border-none btn-polygon`}
-        onClick={() => setShowModal(true)}>
+        onClick={handleShowModal}>
         Log in
       </button>
     </div>

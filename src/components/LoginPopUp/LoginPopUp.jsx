@@ -1,10 +1,19 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Cross } from "../../constants/icons";
+import { popUpActions } from "../../store/popupSlice";
 
-const LoginPopUp = ({ setShowModal }) => {
+const LoginPopUp = () => {
+  const dispatch = useDispatch();
+
+  // Funciton for handling the login popUp
+  const handleShowModal = () => {
+    dispatch(popUpActions.togglePopUp());
+  };
+
   return (
     <div className='bg-white p-8 w-[550px] h-[450px] relative'>
-      <button onClick={() => setShowModal(false)}>
+      <button onClick={handleShowModal}>
         <Cross className='absolute right-4 top-4 cursor-pointer text-gray-500' />
       </button>
       <h2 className='text-2xl font-semibold text-[#1EB3A6] text-center'>
