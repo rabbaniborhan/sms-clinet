@@ -13,6 +13,7 @@ const Contact = () => {
           textAlter: false,
           imageAlter: false,
           heightAlter: true,
+          paddingAlter: true,
         }}
         navPath={true}
         subPath={true}
