@@ -4,7 +4,7 @@ import { ArrowDown, ArrowRight } from "../../constants/icons";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
-import { popUpActions } from "../../store/popupSlice";
+import { popUpActions } from "../../store/popUpSlice";
 
 // <---------------The parent component is Banner.jsx + class-routine.jsx---------------------->
 

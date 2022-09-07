@@ -1,12 +1,10 @@
 import Footer from "../Footer/Footer";
 import Head from "next/head";
-import { useDispatch, useSelector } from "react-redux";
-import { popUpActions } from "../../store/popupSlice";
+import { useSelector } from "react-redux";
 import Backdrop from "../LoginPopUp/Backdrop";
 import LoginPopUp from "../LoginPopUp/LoginPopUp";
 
 const Layout = ({ children }) => {
-  const dispatch = useDispatch();
   const show = useSelector((state) => state.popUp.show);
 
   return (

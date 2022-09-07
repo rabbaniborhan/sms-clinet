@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { popUpActions } from "../../store/popupSlice";
+import { popUpActions } from "../../store/popUpSlice";
 
 const Backdrop = ({ children }) => {
   const dispatch = useDispatch();

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Cross } from "../../constants/icons";
-import { popUpActions } from "../../store/popupSlice";
+import { popUpActions } from "../../store/popUpSlice";
 
 const LoginPopUp = () => {
   const dispatch = useDispatch();

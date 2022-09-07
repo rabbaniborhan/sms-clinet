@@ -1,11 +1,17 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { Youtube } from "../../constants/icons";
 
 // <---------------The parent component is index/Homepage.jsx---------------------->
 
 const LatestNews = () => {
+  const router = useRouter();
+
   return (
-    <div className='w-full flex justify-center items-center fixed z-50'>
+    <div
+      className={`w-full flex justify-center items-center z-50 ${
+        router.asPath === "/notice" ? "" : "fixed"
+      }`}>
       <div className='w-[9.43%] bg-yellow py-4 text-center font-semibold text-white ring-1 ring-white'>
         <p className='font-sans'>Latest News</p>
       </div>

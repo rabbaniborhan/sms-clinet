@@ -2,10 +2,18 @@ import React from "react";
 import Image from "next/image";
 import { Navbar, SubNav } from "../index";
 import images from "../../assets";
+import { useDispatch } from "react-redux";
+import { popUpActions } from "../../store/popUpSlice";
 
 // <---------------The parent component is index.jsx/Homepage + teacher-info.jsx + staff-info.jsx + about-us.jsx + contact.jsx---------------------->
 
 const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
+  const dispatch = useDispatch();
+
+  const handleShowModal = () => {
+    dispatch(popUpActions.togglePopUp());
+  };
+
   return (
     <div className='bg-primary -z-10'>
       <div className='w-4/5 mx-auto relative overflow-hidden'>
@@ -54,7 +62,9 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
                 </p>
                 {path.btn && (
                   <div className='space-x-3 mt-7 xl:text-2xl'>
-                    <button className='lg:px-8 lg:py-2 xl:px-16 xl:py-4 rounded-sm outline-none bg-yellow'>
+                    <button
+                      className='lg:px-8 lg:py-2 xl:px-16 xl:py-4 rounded-sm outline-none bg-yellow'
+                      onClick={handleShowModal}>
                       Log in
                     </button>
                     <a href='/'>Learn more</a>

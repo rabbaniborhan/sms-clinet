@@ -16,11 +16,11 @@ import {
 const Footer = () => {
   return (
     <div>
-      <div className='bg-[#1EB3A6] text-white py-14 relative'>
-        <div className='absolute -top-20 right-0'>
+      <div className='bg-[#1EB3A6] text-white py-14 relative z-10'>
+        <div className='absolute -top-20 right-0 z-20'>
           <Image src={images.footerBg} />
         </div>
-        <div className='w-4/5 mx-auto flex justify-between gap-3 items-center'>
+        <div className='w-4/5 mx-auto flex justify-between gap-3 items-center z-30 sticky'>
           <div className='w-2/6 space-y-4'>
             <Image src={images.logo} />
             <p className='leading-8'>
