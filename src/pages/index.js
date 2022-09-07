@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Banner,
   InfoSection,
@@ -6,12 +5,9 @@ import {
   StatisticsSection,
   PrincipalSection,
   LatestNews,
-  Backdrop,
-  LoginPopUp,
 } from "../components";
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <Banner
@@ -21,18 +17,12 @@ const Home = () => {
         }}
         navPath={true}
         subPath={true}
-        setShowModal={setShowModal}
       />
       <LatestNews />
       <Table />
       <InfoSection />
       <StatisticsSection />
       <PrincipalSection />
-      {showModal && (
-        <Backdrop setShowModal={setShowModal}>
-          <LoginPopUp setShowModal={setShowModal} />
-        </Backdrop>
-      )}
     </div>
   );
 };

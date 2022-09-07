@@ -1,9 +1,13 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { popUpActions } from "../../store/popupSlice";
 
-const Backdrop = ({ children, setShowModal }) => {
+const Backdrop = ({ children }) => {
+  const dispatch = useDispatch();
+
   const handleShowModal = (e) => {
     if (e.target.id === "backdrop") {
-      setShowModal(false);
+      dispatch(popUpActions.togglePopUp());
     }
   };
   return (
