@@ -9,8 +9,8 @@ const LatestNews = () => {
 
   return (
     <div
-      className={`w-full flex justify-center items-center z-50 ${
-        router.asPath === "/notice" ? "" : "fixed"
+      className={`w-full flex justify-center items-center z-30 ${
+        router.asPath === "/" ? "fixed" : ""
       }`}>
       <div className='w-[9.43%] bg-yellow py-4 text-center font-semibold text-white ring-1 ring-white'>
         <p className='font-sans'>Latest News</p>

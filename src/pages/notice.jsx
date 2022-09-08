@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, LatestNews, Table } from "../components";
+import { Banner, Table } from "../components";
 
 const notice = () => {
   return (
@@ -16,7 +16,6 @@ const notice = () => {
         navPath={true}
         subPath={true}
       />
-      <LatestNews />
 
       <Table />
     </div>
