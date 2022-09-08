@@ -24,7 +24,7 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
 
         <div
           className={`flex justify-between items-end lg:pb-24 xl:pb-40 banner-height relative ${
-            path.heightAlter ? `lg:h-[60vh]` : `lg:banner-height`
+            path.heightAlter ? `lg:h-[65vh]` : `lg:banner-height`
           } w-full`}>
           <div className='text-white'>
             {/* Conditionally rendering the banner-texts for teacher-info and
@@ -47,7 +47,7 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
             ) : (
               <div
                 className={`${
-                  !path.paddingAlter ? "pb-16" : "pb-4"
+                  !path.paddingAlter ? "pb-8" : "pb-4"
                 } xl:space-y-10`}>
                 <h1 className='lg:text-5xl font-bold xl:text-7xl mb-7 font-bangla'>
                   পূর্ব রামপুরা স্কুল এন্ড কলেজ
@@ -82,7 +82,7 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
               className={`absolute ${
                 path.heightAlter
                   ? "lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
-                  : "lg:h-[500px] lg:w-[320px] xl:h-[800px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
+                  : "lg:h-[85%] lg:w-[27%] xl:h-[800px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
                 src={images.headerImage}

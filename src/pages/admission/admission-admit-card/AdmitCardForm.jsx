@@ -8,7 +8,7 @@ const AdmitCardForm = () => {
     },
   ];
   return (
-    <div className='flex justify-between items-center bg-white py-10 px-10 w-[650px] mx-auto'>
+    <div className='flex justify-between items-center bg-white py-10 px-10 w-[650px] mx-auto border border-gray-300'>
       <div className='flex flex-col justify-center items-start gap-[52px] -mt-16 font-semibold'>
         <label className='text-md text-primary-text'>Application ID</label>
         <label className='text-md text-primary-text'>Password</label>
