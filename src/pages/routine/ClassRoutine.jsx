@@ -7,7 +7,7 @@ const ClassRoutine = ({ classRoutineData }) => {
   return (
     <div>
       <div className='w-11/12 mx-auto py-10 px-10 text-primary-text bg-white relative border border-gray-300'>
-        <div className='absolute lg:left-[220px] xl:left-[359px] lg:top-40'>
+        <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} />
         </div>
         <div className='text-center space-y-2'>

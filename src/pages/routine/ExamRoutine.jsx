@@ -7,7 +7,7 @@ const ExamRoutine = ({ tableData }) => {
   return (
     <div>
       <div className='w-9/12 mx-auto py-10 px-10 bg-white text-primary-text relative border border-gray-300'>
-        <div className='absolute lg:top-1/3 lg:left-[160px] xl:left-[270px]'>
+        <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} height={600} width={600} />
         </div>
         <div className='text-center space-y-2'>

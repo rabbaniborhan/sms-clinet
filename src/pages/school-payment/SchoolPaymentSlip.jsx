@@ -6,7 +6,7 @@ const SchoolPaymentSlip = () => {
   return (
     <div className='w-3/4 mx-auto'>
       <div className='w-full mx-auto pt-5 pb-1 px-10 text-primary-text bg-white relative'>
-        <div className='absolute lg:top-[25%] lg:left-[235px] xl:left-[350px]'>
+        <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} height={450} width={450} />
         </div>
         <div className='text-center space-y-2'>

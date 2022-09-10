@@ -7,6 +7,10 @@ body {
     background-position: contain;
 }
 
+input::placeholder {
+    font-size: 12px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,9 +64,5 @@ body {
 
     .file input[type="file"] {
         display: none
-    }
-
-    .placeholder-text::placeholder {
-        font-size: 12px;
     }
 }
