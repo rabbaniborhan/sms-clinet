@@ -5,7 +5,7 @@ import Image from "next/image";
 const AdmissionAdmitCard = () => {
   return (
     <div className='w-10/12 mx-auto'>
-      <div className='w-full mx-auto pt-5 pb-1 px-20 text-primary-text bg-white relative border border-gray-300'>
+      <div className='w-full mx-auto pt-5 pb-1 px-14 text-primary-text bg-white relative border border-gray-300'>
         <div className='absolute lg:top-[30%] lg:left-[235px] xl:left-[350px]'>
           <Image src={images.bigLogo} height={550} width={550} />
         </div>

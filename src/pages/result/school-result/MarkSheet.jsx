@@ -8,7 +8,7 @@ const MarkSheet = ({ reportData }) => {
   return (
     <div className='w-full mx-auto'>
       <div className='w-full mx-auto pt-5 pb-1 px-10 text-primary-text bg-white relative border border-gray-300'>
-        <div className='absolute lg:top-1/4 lg:left-[200px] xl:left-[350px]'>
+        <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} height={600} width={600} />
         </div>
         <div className='text-center space-y-2'>
@@ -51,18 +51,18 @@ const MarkSheet = ({ reportData }) => {
                 <p className='text-2xl'>{reportData?.registration}</p>
               </div>
             </div>
-            <div className=' flex justify-between capitalize'>
+            <div className=' flex justify-between gap-10 capitalize'>
               <div className='w-1/5 font-semibold text-base space-y-5'>
                 <p>date</p>
                 <p>position</p>
               </div>
-              <div className='ml-36 mr-8 space-y-5'>
+              <div className=' space-y-5'>
                 <p>:</p>
                 <p>:</p>
               </div>
               <div className='font-cursive font-bold text-md space-y-5'>
                 <p className='w-16'>{reportData?.date}</p>
-                <p className='w-16'>{reportData?.position}</p>
+                <p className='w-20'>{reportData?.position}</p>
               </div>
             </div>
           </div>
@@ -110,8 +110,10 @@ const MarkSheet = ({ reportData }) => {
                   className='text-center font-bold text-md border-[0.5px] border-gray-500'>
                   {reportData?.totalOf}
                 </td>
-                <td className='text-center font-bold text-md absolute top-1/2 right-4'>
-                  {reportData?.gpa}
+                <td className='text-center font-bold text-md relative'>
+                  <span className='absolute top-[-130px] left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                    {reportData?.gpa}
+                  </span>
                 </td>
               </tr>
             </tbody>
