@@ -153,12 +153,16 @@ const Navbar = ({ navPath, setShowModal }) => {
           <ul className=' w-48 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 right-0 transition-all'>
             <li
               className={` border-b-[1px] py-2 px-3 hover:text-hover w-full group relative ${
-                router.asPath.includes("/admission") ? "text-hover" : ""
+                router.asPath.includes(
+                  "/admission/class-six" || "/admission/class-nine"
+                )
+                  ? "text-hover"
+                  : ""
               }`}
               onMouseOver={() => setShow(true)}
               onMouseLeave={() => setShow(false)}>
               <div className='flex justify-between items-center gap-2'>
-                <Link href='#'>Admission Form</Link>
+                <span>Admission Form</span>
                 <ArrowRight className='text-xl mt-1' />
               </div>
 

@@ -21,13 +21,13 @@ const AdmitCardForm = () => {
       </div>
       <form className='flex flex-col justify-center items-start gap-7'>
         <input
-          className='outline-none ring-1 ring-gray-400 p-2 w-96 rounded placeholder-text'
+          className='outline-none ring-1 ring-gray-300 p-2 w-96 rounded placeholder-text'
           type='email'
           name='name'
           placeholder='Enter Application ID'
         />
         <input
-          className='outline-none ring-1 ring-gray-400 p-2 w-96 rounded placeholder-text'
+          className='outline-none ring-1 ring-gray-300 p-2 w-96 rounded placeholder-text'
           type='email'
           name='name'
           placeholder='Enter Password'

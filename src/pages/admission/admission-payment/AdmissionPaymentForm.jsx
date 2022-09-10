@@ -4,7 +4,7 @@ import { Selector } from "../../../components";
 const AdmissionPaymentForm = () => {
   const data = [{ name: "Please select" }, { name: "Default" }];
   return (
-    <div className='flex justify-between items-center bg-white py-10 px-10 w-[650px] mx-auto'>
+    <div className='flex justify-between items-center bg-white py-10 px-10 w-[650px] mx-auto border border-gray-300'>
       <div className='flex flex-col justify-center items-start gap-11 -mt-16 font-semibold'>
         <label className='text-md text-primary-text'>Application ID</label>
         <label className='text-md text-primary-text'>Password</label>
@@ -21,13 +21,13 @@ const AdmissionPaymentForm = () => {
       </div>
       <form className='flex flex-col justify-center items-start gap-6'>
         <input
-          className='outline-none ring-1 ring-gray-400 p-2.5 w-96'
+          className='outline-none ring-1 ring-gray-300 p-2 rounded w-96'
           type='email'
           name='name'
           placeholder='Enter Application ID'
         />
         <input
-          className='outline-none ring-1 ring-gray-400 p-2.5 w-96'
+          className='outline-none ring-1 ring-gray-300 p-2 rounded w-96'
           type='email'
           name='name'
           placeholder='Enter Password'
@@ -35,13 +35,13 @@ const AdmissionPaymentForm = () => {
         {/* Admission Payment selector */}
         <Selector data={data} style={true} />
         <input
-          className='outline-none ring-1 ring-gray-400 p-2.5 w-96'
+          className='outline-none ring-1 ring-gray-300 p-2 rounded w-96'
           type='email'
           name='name'
           placeholder='Enter Phone number'
         />
         <input
-          className='outline-none ring-1 ring-gray-400 p-2.5 w-96'
+          className='outline-none ring-1 ring-gray-300 p-2 rounded w-96'
           type='email'
           name='name'
           placeholder='Enter Amount'
