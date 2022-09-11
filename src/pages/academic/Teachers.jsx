@@ -4,11 +4,11 @@ import teacherData from "../../constants/teacherData";
 
 // <---------------The parent component is teacher-info/index.jsx---------------------->
 
-const Teachers = () => {
+const Teachers = ({ alterText }) => {
   return (
     <div className='w-11/12 mx-auto py-20 mb-10'>
       <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
-        Teachers Info
+        {alterText ? "Staff Info" : "Teacher Info"}
       </h2>
       <div className='mb-5 xl:mb-10'>
         <div className='flex justify-center items-center'>

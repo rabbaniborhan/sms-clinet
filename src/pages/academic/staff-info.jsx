@@ -16,7 +16,7 @@ const StaffInfo = () => {
         navPath={true}
         subPath={true}
       />
-      <Teachers />
+      <Teachers alterText={true} />
     </div>
   );
 };
