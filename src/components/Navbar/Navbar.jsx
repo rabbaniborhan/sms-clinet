@@ -54,13 +54,13 @@ const Navbar = ({ navPath, setShowModal }) => {
           {/* -------------------------Submenu--------------------------- */}
           <ul className=' w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 left-0 transition-all'>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/academic/teacher-info" ? "text-hover" : ""
               }`}>
               <Link href='/academic/teacher-info'>Teacher Info</Link>
             </li>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/academic/staff-info" ? "text-hover" : ""
               }`}>
               <Link href='/academic/staff-info'>Staff Info</Link>
@@ -81,13 +81,13 @@ const Navbar = ({ navPath, setShowModal }) => {
           {/* -------------------------Submenu--------------------------- */}
           <ul className=' w-32 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 left-0 transition-all'>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/routine/class-routine" ? "text-hover" : ""
               }`}>
               <Link href='/routine/class-routine'>Class Routine</Link>
             </li>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/routine/exam-routine" ? "text-hover" : ""
               }`}>
               <Link href='/routine/exam-routine'>Exam Routine</Link>
@@ -108,13 +108,13 @@ const Navbar = ({ navPath, setShowModal }) => {
           {/* -------------------------Submenu--------------------------- */}
           <ul className=' w-40 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 left-0 transition-all'>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/result/admission-result" ? "text-hover" : ""
               }`}>
               <Link href='/result/admission-result'>Admission Result</Link>
             </li>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/result/school-result" ? "text-hover" : ""
               }`}>
               <Link href='/result/school-result'>School Result</Link>
@@ -152,7 +152,7 @@ const Navbar = ({ navPath, setShowModal }) => {
           {/* -------------------------Submenu--------------------------- */}
           <ul className=' w-48 bg-white text-primary-color flex flex-col justify-start items-start absolute invisible group-hover:visible top-16 right-0 transition-all'>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full group relative ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full group relative ${
                 router.asPath.includes(
                   "/admission/class-six" || "/admission/class-nine"
                 )
@@ -172,13 +172,13 @@ const Navbar = ({ navPath, setShowModal }) => {
                   show ? "visible" : "invisible"
                 } `}>
                 <li
-                  className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+                  className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                     router.asPath === "/admission/class-six" ? "text-hover" : ""
                   }`}>
                   <Link href='/admission/class-six'>Class - Six</Link>
                 </li>
                 <li
-                  className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+                  className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                     router.asPath === "/admission/class-nine"
                       ? "text-hover"
                       : ""
@@ -188,7 +188,7 @@ const Navbar = ({ navPath, setShowModal }) => {
               </ul>
             </li>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/admission/admission-payment"
                   ? "text-hover"
                   : ""
@@ -196,13 +196,13 @@ const Navbar = ({ navPath, setShowModal }) => {
               <Link href='/admission/admission-payment'>Admission Payment</Link>
             </li>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/school-payment" ? "text-hover" : ""
               }`}>
               <Link href='/school-payment'>School Payment</Link>
             </li>
             <li
-              className={` border-b-[1px] py-2 px-3 hover:text-hover w-full ${
+              className={` border-b-[1px] py-2 px-3 hover:text-white hover:bg-[#1EB3A6] w-full ${
                 router.asPath === "/admission/admission-admit-card"
                   ? "text-hover"
                   : ""
