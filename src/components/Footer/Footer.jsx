@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import images from "../../assets";
 import {
@@ -14,6 +15,8 @@ import {
 // <---------------The parent component is Layout.jsx---------------------->
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <div>
       <div className='bg-[#1EB3A6] text-white py-14 relative z-10'>
@@ -71,7 +74,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='py-3 px-6 flex justify-between items-center text-primary-color text-sm'>
+      <div
+        className={`py-3 px-6 flex justify-between items-center text-primary-color text-sm ${
+          router.asPath === "/" ? "mb-[60px]" : ""
+        }`}>
         <span>Copyright by SMS</span>
         <span>Site developed & maintained by Make Real</span>
       </div>
