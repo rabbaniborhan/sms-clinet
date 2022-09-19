@@ -1,6 +1,8 @@
 import React from "react";
 import SchoolPaymentSlip from "./SchoolPaymentSlip";
 import { LayoutSecond } from "../../components";
+import SchoolPaymentForm from "./SchoolPaymentForm/SchoolPaymentForm";
+import SchoolPaymentDetails from "./SchoolPaymentDetails";
 
 const SchoolPaymentPage = () => {
   return (
@@ -8,7 +10,7 @@ const SchoolPaymentPage = () => {
       <div className='w-4/5 mx-auto my-20 py-20'>
         <div>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
-            School Payment Slip
+            School Payment Form
           </h2>
           <div className='mb-10'>
             <div className='flex justify-center items-center'>
@@ -23,7 +25,9 @@ const SchoolPaymentPage = () => {
             </div>
           </div>
         </div>
+        <SchoolPaymentForm />
         <SchoolPaymentSlip />
+        <SchoolPaymentDetails />
       </div>
     </LayoutSecond>
   );
