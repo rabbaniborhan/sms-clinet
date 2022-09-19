@@ -3,9 +3,6 @@ import { Selector } from "../../../components";
 import SchoolPaymentFormSelector from "./SchoolPaymentFormSelector";
 
 const SchoolPaymentForm = () => {
-  const classes = [{ name: "One" }, { name: "Two" }, { name: "Three" }];
-  const sections = [{ name: "A" }, { name: "B" }, { name: "C" }];
-  const groups = [{ name: "Science" }, { name: "Commerce" }, { name: "Arts" }];
   return (
     <div className='w-[720px] mx-auto py-10 rounded flex flex-col justify-center items-center bg-white border border-gray-300 overflow-hidden'>
       <form>
@@ -27,12 +24,12 @@ const SchoolPaymentForm = () => {
             <p className='font-semibold'>:</p>
           </div>
           <div className='space-y-5'>
-            <SchoolPaymentFormSelector data={classes} />
-            <SchoolPaymentFormSelector data={classes} />
-            <SchoolPaymentFormSelector data={classes} />
-            <SchoolPaymentFormSelector data={classes} />
-            <SchoolPaymentFormSelector data={classes} />
-            <SchoolPaymentFormSelector data={classes} />
+            <SchoolPaymentFormSelector />
+            <SchoolPaymentFormSelector />
+            <SchoolPaymentFormSelector />
+            <SchoolPaymentFormSelector />
+            <SchoolPaymentFormSelector />
+            <SchoolPaymentFormSelector />
           </div>
         </div>
         <div className='mt-10 text-right'>

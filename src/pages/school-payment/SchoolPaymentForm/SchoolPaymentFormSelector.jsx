@@ -2,7 +2,8 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 
-export default function SchoolPaymentFormSelector({ data, style }) {
+export default function SchoolPaymentFormSelector({ style }) {
+  const data = [{ name: "One" }, { name: "Two" }, { name: "Three" }];
   const [selected, setSelected] = useState(data[0]);
 
   return (
