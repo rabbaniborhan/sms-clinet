@@ -43,11 +43,6 @@ const AdmissionForm = ({ studentClass }) => {
             I will abide by all the rules.
           </label>
         </div>
-        <div className='flex w-full justify-end items-end mx-auto mt-16 mb-5 px-8'>
-          <button className='bg-primary text-white py-3 w-36 rounded'>
-            Submit
-          </button>
-        </div>
       </div>
     </div>
   );

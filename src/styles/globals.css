@@ -11,6 +11,10 @@ input::placeholder {
     font-size: 12px;
 }
 
+.swal-button--confirm {
+    background: #1EB3A6!important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -20,6 +20,7 @@ const AdmissionFormColons = () => {
       <label htmlFor=''>:</label>
       <label htmlFor=''>:</label>
       <label htmlFor=''>:</label>
+      <label htmlFor=''>:</label>
     </div>
   );
 };
