@@ -25,7 +25,7 @@ const Navbar = ({ navPath, setShowModal }) => {
     <div
       className={`mx-auto w-4/5 z-10 bg-navbar ${
         navPath ? " text-white" : `text-primary-color my-6 bg-navbar-2`
-      }  pl-2 py-2.5 h-16 rounded-tl rounded-bl flex justify-between items-center shadow-xl absolute w-full`}>
+      }  pl-2 py-2.5 h-16 rounded-tl rounded-bl lg:flex hidden justify-between items-center shadow-xl absolute w-full`}>
       <ul className='flex justify-around items-center list-none p-0 m-0  text-base w-full'>
         <li
           className={`hover:text-hover px-1 ${
