@@ -16,6 +16,7 @@ import {
   MdOutlineKeyboardArrowRight,
   MdOutlineKeyboardArrowDown,
 } from "react-icons/md";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 import { FaTimes } from "react-icons/fa";
 
@@ -69,4 +70,8 @@ export const ArrowDown = ({ className }) => {
 
 export const Cross = ({ className }) => {
   return <FaTimes className={className} />;
+};
+
+export const MenuIcon = ({ className }) => {
+  return <HiOutlineMenuAlt3 className={className} />;
 };

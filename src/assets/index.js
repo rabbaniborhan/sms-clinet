@@ -5,8 +5,7 @@ import logo from "./logo.svg";
 import principalImg from "./woman-using-tablet 1.png";
 import principalImg2 from "./woman-using-tablet-2.png";
 import playStore from "./playstore.png";
-import infoImage1 from "./info-img-1.png";
-import infoImage2 from "./info-img-2.png";
+import infoImage from "./infoSVG.svg";
 import studentPng from "./student.png";
 import blackboardPng from "./blackboard.png";
 import studentSvg from "./student.svg";
@@ -32,8 +31,7 @@ const images = {
   logo,
   principalImg,
   playStore,
-  infoImage1,
-  infoImage2,
+  infoImage,
   studentSvg,
   blackboardSvg,
   studentPng,

@@ -4,6 +4,7 @@ import { Navbar, SubNav } from "../index";
 import images from "../../assets";
 import { useDispatch } from "react-redux";
 import { popUpActions } from "../../store/popUpSlice";
+import MobileNavbar from "../MobileNavbar/MobileNavbar";
 
 // <---------------The parent component is index.jsx/Homepage + teacher-info.jsx + staff-info.jsx + about-us.jsx + contact.jsx---------------------->
 
@@ -16,9 +17,10 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
 
   return (
     <div className='bg-primary -z-10'>
-      <div className='w-4/5 mx-auto relative overflow-hidden'>
+      <div className='lg:w-4/5 w-full mx-auto relative overflow-hidden'>
         <SubNav subPath={subPath} />
         <Navbar navPath={navPath} setShowModal={setShowModal} />
+        <MobileNavbar />
 
         {/* Conditionally setting the height of the banner for Homepage and also for other pages */}
 
