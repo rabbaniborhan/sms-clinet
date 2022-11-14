@@ -6,11 +6,11 @@ import images from "../../assets";
 
 const InfoSection = () => {
   return (
-    <div className='flex justify-around items-center w-4/5 h-[80vh] py-20 mt-20 lg:mb-32 xl:mb-0 mx-auto'>
-      <div className='w-2/5'>
+    <div className='lg:flex justify-around items-center lg:w-4/5 w-11/12 lg:h-[80vh] lg:py-20 py-10 lg:mt-20 mt-10 lg:mb-32 xl:mb-0 mx-auto'>
+      <div className='lg:w-2/5 mb-10'>
         <Image src={images.infoImage} />
       </div>
-      <div className='w-2/5 space-y-6 flex flex-col justify-start font-bangla'>
+      <div className='lg:w-2/5 space-y-6 flex flex-col justify-start font-bangla'>
         <h4 className='text-[#FF9900] font-semibold text-xl'>
           প্রাতিষ্ঠানিক তথ্য
         </h4>
