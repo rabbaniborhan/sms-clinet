@@ -5,7 +5,6 @@ body {
     background-image: url("../assets/bg-svg-items.svg");
     background-repeat: no-repeat;
     background-position: contain;
-    overflow-x: hidden;
 }
 
 input::placeholder {

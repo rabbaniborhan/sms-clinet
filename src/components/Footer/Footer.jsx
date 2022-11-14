@@ -23,8 +23,8 @@ const Footer = () => {
         <div className='absolute -top-20 right-0 z-20'>
           <Image src={images.footerBg} />
         </div>
-        <div className='w-4/5 mx-auto flex justify-between gap-3 items-center z-30 sticky'>
-          <div className='w-2/6 space-y-4'>
+        <div className='lg:w-4/5 w-11/12 mx-auto flex flex-col lg:flex-row justify-between gap-3 items-center z-30 sticky'>
+          <div className='lg:w-2/6 w-full space-y-4'>
             <Image src={images.logo} />
             <p className='leading-8'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate
@@ -36,29 +36,31 @@ const Footer = () => {
               <Twitter className='text-2xl' />
             </div>
           </div>
-          <div className='flex flex-col gap-3'>
-            <h3 className='text-xl font-bold'>What We Do</h3>
-            <div className='flex flex-col justify-start items-start gap-3 text-sm'>
-              <Link href='/'>Courses</Link>
-              <Link href='/'>Products</Link>
-              <Link href='/'>Projects</Link>
-              <Link href='/'>Services</Link>
-              <Link href='/'>Laboratory</Link>
-              <Link href='/'>Research</Link>
+          <div className='flex justify-between items-center gap-20 mt-5 lg:mt-0'>
+            <div className='flex flex-col gap-3'>
+              <h3 className='text-xl font-bold'>What We Do</h3>
+              <div className='flex flex-col justify-start items-start gap-3 text-sm'>
+                <Link href='/'>Courses</Link>
+                <Link href='/'>Products</Link>
+                <Link href='/'>Projects</Link>
+                <Link href='/'>Services</Link>
+                <Link href='/'>Laboratory</Link>
+                <Link href='/'>Research</Link>
+              </div>
+            </div>
+            <div className='flex flex-col gap-3'>
+              <h3 className='text-xl font-bold'>Our Institute</h3>
+              <div className='flex flex-col justify-start items-start gap-3 text-sm'>
+                <Link href='/'>Home</Link>
+                <Link href='/'>About Us</Link>
+                <Link href='/'>Notice Board</Link>
+                <Link href='/'>Institution</Link>
+                <Link href='/'>Student</Link>
+                <Link href='/'>Teacher</Link>
+              </div>
             </div>
           </div>
-          <div className='flex flex-col gap-3'>
-            <h3 className='text-xl font-bold'>Our Institute</h3>
-            <div className='flex flex-col justify-start items-start gap-3 text-sm'>
-              <Link href='/'>Home</Link>
-              <Link href='/'>About Us</Link>
-              <Link href='/'>Notice Board</Link>
-              <Link href='/'>Institution</Link>
-              <Link href='/'>Student</Link>
-              <Link href='/'>Teacher</Link>
-            </div>
-          </div>
-          <div className='flex flex-col gap-3 -mt-[3rem]'>
+          <div className='flex flex-col gap-3 lg:-mt-[3rem] mt-5'>
             <h3 className='text-xl font-bold'>Our Contact</h3>
             <span>SMS– 20853 – Biassono (MB) Via dei Gelsi, 41/43</span>
             <span className='flex items-center justify-start gap-2'>
@@ -75,7 +77,7 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`py-3 px-6 flex justify-between items-center text-primary-color text-sm ${
+        className={`py-3 px-6 flex lg:flex-row flex-col justify-between items-center text-primary-color text-sm ${
           router.asPath === "/" ? "mb-[60px]" : ""
         }`}>
         <span>Copyright by SMS</span>

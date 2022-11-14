@@ -18,7 +18,7 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
   };
 
   return (
-    <div className='bg-primary -z-10'>
+    <div className='bg-primary -z-10 w-full'>
       <div className='lg:w-4/5 w-full mx-auto relative overflow-hidden'>
         <SubNav subPath={subPath} />
         <Navbar navPath={navPath} setShowModal={setShowModal} />
@@ -86,13 +86,13 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
               className={`lg:absolute ${
                 path.heightAlter
                   ? "lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
-                  : "h-auto w-[75%] mx-auto lg:h-[85%] lg:w-[27%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
+                  : "h-full w-[75%] mx-auto lg:h-[85%] lg:w-[27%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
                 src={images.headerImage}
                 alt='female-student-holding-books'
                 objectFit='cover'
-                layout={mobileWidth === false ? "fill" : undefined}
+                layout={mobileWidth === false ? "fill" : "responsive"}
               />
             </div>
           ) : (

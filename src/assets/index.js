@@ -2,7 +2,7 @@ import headerImage from "./lady.png";
 import bgSvg from "./bg-svg-items.svg";
 import studentHoldingBooks from "./female-student-holding-her-books.png";
 import logo from "./logo.svg";
-import principalImg from "./woman-using-tablet 1.png";
+import principalImg from "./lady.svg";
 import principalImg2 from "./woman-using-tablet-2.png";
 import playStore from "./playstore.png";
 import infoImage from "./infoSVG.svg";

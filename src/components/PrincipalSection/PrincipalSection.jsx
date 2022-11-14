@@ -6,15 +6,11 @@ import images from "../../assets";
 
 const PrincipalSection = () => {
   return (
-    <div className='lg:h-[90vh] xl:h-[60vh] lg:py-20 lg:my-20 xl:py-10 xl:mb-10 flex justify-between'>
-      <div className='relative w-1/5 -mt-10'>
-        <div className='w-[400px] h-[500px] absolute left-0 top-10 bg-[#A6C9CF]'>
-          <div className='absolute top-[-75px] left-[168px] w-[470px]'>
-            <Image src={images.principalImg} height={692} />
-          </div>
-        </div>
+    <div className='lg:h-[90vh] xl:h-[60vh] lg:py-20 lg:my-20 my-10 xl:py-10 xl:mb-10 lg:flex justify-between'>
+      <div className='relative lg:w-[700px] h-[300px] w-full lg:h-[600px] lg:-mt-32'>
+        <Image src={images.principalImg} layout='fill' />
       </div>
-      <div className='w-2/4 space-y-4 flex flex-col pr-60 mt-10 font-bangla'>
+      <div className='lg:w-2/4 w-11/12 mx-auto space-y-4 flex flex-col lg:pr-60 mt-10 font-bangla'>
         <h4 className='text-[#FF9900] font-semibold text-xl'>প্রধান অধ্যক্ষ</h4>
         <h2 className='text-[#0D1530CC] font-bold text-4xl leading-[60px]'>
           ড. সাবরিনা সুলতানা - <br /> পূর্ব রামপুরা স্কুল এন্ড কলেজ
