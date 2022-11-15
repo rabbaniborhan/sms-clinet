@@ -7,11 +7,11 @@ const groups = [{ name: "Science" }, { name: "Commerce" }, { name: "Arts" }];
 
 const RoutineSearchForm = () => {
   return (
-    <div className='w-3/5 mx-auto py-20  flex flex-col justify-center items-center bg-white border border-gray-300'>
+    <div className='lg:w-3/5 mx-auto py-20  flex flex-col justify-center items-center bg-white border border-gray-300'>
       <form className='flex flex-col justify-center items-center gap-10'>
-        <div className='flex justify-center items-center w-[500px] gap-10'>
+        <div className='flex justify-center items-center lg:w-[500px] gap-10'>
           <label
-            className='font-semibold text-md text-gray-500 w-8 '
+            className='font-semibold text-md text-gray-500 w-8'
             htmlFor='class'>
             Class
           </label>
@@ -24,7 +24,7 @@ const RoutineSearchForm = () => {
 
           <Selector data={classes} />
         </div>
-        <div className='flex justify-center items-center w-[500px] gap-10'>
+        <div className='flex justify-center items-center lg:w-[500px] gap-10'>
           <label
             className='font-semibold text-md text-gray-500 w-8'
             htmlFor='class'>
@@ -39,7 +39,7 @@ const RoutineSearchForm = () => {
 
           <Selector data={sections} />
         </div>
-        <div className='flex justify-center items-center w-[500px] gap-10'>
+        <div className='flex justify-center items-center lg:w-[500px] gap-10'>
           <label
             className='font-semibold text-md text-gray-500 w-8'
             htmlFor='class'>
@@ -54,7 +54,8 @@ const RoutineSearchForm = () => {
 
           <Selector data={groups} />
         </div>
-        <button className='-ml-32 bg-primary py-2 w-36 rounded text-white'>
+
+        <button className='lg:-ml-32 ml-auto bg-primary py-2 w-36 rounded text-white'>
           Search
         </button>
       </form>

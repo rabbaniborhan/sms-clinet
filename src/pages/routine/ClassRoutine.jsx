@@ -6,8 +6,8 @@ import ClassRoutineTableData from "./ClassRoutineTableData";
 const ClassRoutine = ({ classRoutineData }) => {
   return (
     <div>
-      <div className='w-11/12 mx-auto py-10 px-10 text-primary-text bg-white relative border border-gray-300'>
-        <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
+      <div className='lg:w-11/12 mx-auto py-10 lg:px-10 px-5 text-primary-text bg-white relative border border-gray-300 overflow-x-auto'>
+        <div className='absolute lg:block hidden lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} />
         </div>
         <div className='text-center space-y-2'>
@@ -21,31 +21,33 @@ const ClassRoutine = ({ classRoutineData }) => {
           </h3>
           <p>Class -</p>
         </div>
-        <table className='w-full my-10'>
-          <thead>
-            <tr>
-              <th className='text-2xl border-[0.5px] border-gray-400 py-2 px-10'>
-                Day
-              </th>
-              {classRoutineData?.map((item, i) => (
-                <th
-                  className='border-[0.5px] border-gray-400 py-2 px-3'
-                  key={i}>
-                  {item.time}
+        <div className='overflow-x-auto lg:overflow-hidden'>
+          <table className='lg:w-full my-10'>
+            <thead>
+              <tr>
+                <th className='text-2xl border-[0.5px] border-gray-400 py-2 px-10'>
+                  Day
                 </th>
-              ))}
-            </tr>
-          </thead>
+                {classRoutineData?.map((item, i) => (
+                  <th
+                    className='border-[0.5px] border-gray-400 py-2 px-3'
+                    key={i}>
+                    {item.time}
+                  </th>
+                ))}
+              </tr>
+            </thead>
 
-          {classRoutineData?.map((item, i) => (
-            <ClassRoutineTableData
-              day={item.day}
-              teacher={item.teacher}
-              subject={item.subject}
-              key={i}
-            />
-          ))}
-        </table>
+            {classRoutineData?.map((item, i) => (
+              <ClassRoutineTableData
+                day={item.day}
+                teacher={item.teacher}
+                subject={item.subject}
+                key={i}
+              />
+            ))}
+          </table>
+        </div>
       </div>
 
       <div className='flex justify-end items-end gap-3 w-11/12 mx-auto my-16'>

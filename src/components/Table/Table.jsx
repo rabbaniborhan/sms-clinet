@@ -6,7 +6,7 @@ import { Pagination } from "../../components";
 
 const Table = () => {
   return (
-    <div className='w-4/5 mx-auto space-y-5 py-8'>
+    <div className='lg:w-4/5 w-11/12 mx-auto space-y-5 py-8'>
       <div className='mb-12'>
         <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
           Latest Notice
@@ -24,27 +24,29 @@ const Table = () => {
           </div>
         </div>
       </div>
-      <table className='border-collapse bg-white lg:w-4/5 xl:w-3/5 mx-auto'>
-        {/* Mapping through the data.js file to generate table data */}
+      <div className='overflow-x-auto'>
+        <table className='border-collapse bg-white lg:w-4/5 xl:w-3/5 mx-auto'>
+          {/* Mapping through the data.js file to generate table data */}
 
-        {tableData.map((item, i) => (
-          <tbody key={i}>
-            <tr>
-              <td className='px-6 py-4 border-[0.5px] border-gray-400 text-left font-bangla'>
-                {item.title}
-              </td>
-              <td className='px-6 py-4 border-[0.5px] border-gray-400 text-primary-color text-center font-bangla'>
-                {item.date}
-              </td>
-              <td className='px-6 py-4 border-[0.5px] border-gray-400 text-center'>
-                <button className='px-6 py-1.5 bg-primary text-white outline-none border-none rounded'>
-                  {item.link}
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        ))}
-      </table>
+          {tableData.map((item, i) => (
+            <tbody key={i}>
+              <tr>
+                <td className='px-6 py-4 border-[0.5px] border-gray-400 text-left font-bangla'>
+                  {item.title}
+                </td>
+                <td className='px-6 py-4 border-[0.5px] border-gray-400 text-primary-color text-center font-bangla'>
+                  {item.date}
+                </td>
+                <td className='px-6 py-4 border-[0.5px] border-gray-400 text-center'>
+                  <button className='px-6 py-1.5 bg-primary text-white outline-none border-none rounded'>
+                    {item.link}
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          ))}
+        </table>
+      </div>
       <Pagination />
     </div>
   );
