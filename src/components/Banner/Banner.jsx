@@ -35,12 +35,12 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
             staff-info page or other pages */}
 
             {path.textAlter ? (
-              <div className='font-bangla'>
+              <div className='font-bangla w-11/12 mx-auto lg:mx-0 mt-5 lg:mt-0 lg:w-auto text-left'>
                 <h4 className='font-semibold text-xl my-2'>প্রধান অধ্যক্ষ</h4>
-                <h2 className='font-bold lg:text-4xl lg:leading-[50px] xl:text-5xl xl:leading-[70px] mb-2'>
+                <h2 className='font-bold text-2xl lg:text-4xl lg:leading-[50px] xl:text-5xl xl:leading-[70px] mb-2'>
                   ড. সাবরিনা সুলতানা - <br /> পূর্ব রামপুরা স্কুল এন্ড কলেজ
                 </h2>
-                <p className='w-3/5 lg:text-md lg:leading-[30px] xl:text-xl xl:leading-[40px]'>
+                <p className='lg:w-3/5 w-full mx-auto lg:mx-0 lg:text-md lg:leading-[30px] xl:text-xl xl:leading-[40px]'>
                   যে কথাকে কাজে লাগাতে চাও, তাকে কাজে লাগানোর কথা চিন্তা করার
                   আগে ভাবো, তুমি কি সেই কথার জাদুতে আচ্ছন্ন হয়ে গেছ কিনা। তুমি
                   যদি নিশ্চিত হও যে, তুমি কোনো মোহাচ্ছাদিত আবহে আবিষ্ট হয়ে
@@ -85,26 +85,26 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
             <div
               className={`lg:absolute ${
                 path.heightAlter
-                  ? "lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
-                  : "h-full w-[75%] mx-auto lg:h-[85%] lg:w-[27%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
+                  ? "w-[75%] mx-auto lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
+                  : "w-[63%] h-[80%] mx-auto lg:h-[85%] lg:w-[27%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
                 src={images.headerImage}
                 alt='female-student-holding-books'
                 objectFit='cover'
-                layout={mobileWidth === false ? "fill" : "responsive"}
+                layout={mobileWidth === false ? "fill" : ""}
               />
             </div>
           ) : (
             <div
-              className={`absolute ${
-                path.heightAlter && "xl:h-[540px] xl:w-[450px] xl:-mb-28"
+              className={`lg:absolute ${
+                path.heightAlter &&
+                "xl:h-[540px] xl:w-[450px] xl:-mb-28 w-[95%] mx-auto lg:mx-0"
               } lg:h-[330px] lg:w-[280px] lg:-mb-24 lg:right-28 xl:right-16`}>
               <Image
                 src={images.principalImg2}
                 alt='Principal_image'
-                layout='fill'
-                objectFit='cover'
+                layout={mobileWidth === false ? "fill" : "responsive"}
               />
             </div>
           )}

@@ -19,6 +19,7 @@ const Home = () => {
         subPath={true}
       />
       <LatestNews />
+      <Table />
       <InfoSection />
       <StatisticsSection />
       <PrincipalSection />

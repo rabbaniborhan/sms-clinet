@@ -6,7 +6,7 @@ import ExamRoutineTableData from "./ExamRoutineTableData";
 const ExamRoutine = ({ tableData }) => {
   return (
     <div>
-      <div className='w-9/12 mx-auto py-10 px-10 bg-white text-primary-text relative border border-gray-300'>
+      <div className='lg:w-9/12 mx-auto py-10 lg:px-10 px-5 bg-white text-primary-text relative border border-gray-300'>
         <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} height={600} width={600} />
         </div>

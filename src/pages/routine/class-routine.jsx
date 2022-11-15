@@ -7,7 +7,7 @@ import { getClassRoutineData } from "../../../routineData";
 const ClassRoutinePage = ({ classRoutineData }) => {
   return (
     <LayoutSecond>
-      <div className='w-4/5 mx-auto'>
+      <div className='lg:w-4/5 w-11/12 mx-auto'>
         <div className=' py-20 my-20'>
           <div>
             <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>

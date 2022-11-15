@@ -36,7 +36,7 @@ const Footer = () => {
               <Twitter className='text-2xl' />
             </div>
           </div>
-          <div className='flex justify-between items-center gap-20 mt-5 lg:mt-0'>
+          <div className='flex justify-between items-center gap-24 mt-5 lg:mt-0'>
             <div className='flex flex-col gap-3'>
               <h3 className='text-xl font-bold'>What We Do</h3>
               <div className='flex flex-col justify-start items-start gap-3 text-sm'>
