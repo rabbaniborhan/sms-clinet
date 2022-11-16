@@ -5,101 +5,49 @@ const exams = [{ name: "Mid-Semester" }];
 
 const SchoolResultSearchForm = () => {
   return (
-    <div className='w-[70%] mx-auto p-10 flex flex-col justify-center items-center bg-white border border-gray-300'>
-      <form className='flex flex-col justify-center items-center gap-10'>
+    <div className='lg:w-[55%] mb-20 w-full lg:mb-0 mx-auto lg:px-10 px-5 py-10 bg-white border border-gray-300'>
+      <form className='flex flex-col justify-center items-center gap-10 w-full'>
         {/* Input for Examination */}
-        <div className='flex justify-between items-center w-[550px] '>
-          <label
-            className='font-semibold text-md text-gray-500 w-18'
-            htmlFor='class'>
-            Examination
-          </label>
-          <label
-            className='font-semibold text-md text-gray-500 w-14'
-            htmlFor='class'>
-            :
-          </label>
 
-          {/* Selector for selecting examination */}
-          <Selector data={exams} />
-        </div>
-
-        {/* Input for Exam Year */}
-        <div className='flex justify-between items-center w-[550px] '>
-          <label
-            className='font-semibold text-md text-gray-500 w-18'
-            htmlFor='class'>
-            Exam Year
-          </label>
-          <label
-            className='font-semibold text-md text-gray-500 -ml-10'
-            htmlFor='class'>
-            :
-          </label>
-
-          {/* Selector for selecting examination year */}
-          <Selector data={exams} />
-        </div>
-
-        {/* Input for Class */}
-        <div className='flex justify-between items-center w-[550px] gap-10'>
-          <label
-            className='font-semibold text-md text-gray-500 w-[55px]'
-            htmlFor='class'>
-            Class
-          </label>
-          <label
-            className='font-semibold text-md text-gray-500 w-5'
-            htmlFor='class'>
-            :
-          </label>
-          {/* Selector for selecting class */}
-          <Selector data={exams} />
-        </div>
-
-        {/* Input for Roll */}
-        <div className='flex justify-between items-center w-[550px] gap-10'>
-          <label
-            className='font-semibold text-md text-gray-500 w-14'
-            htmlFor='class'>
-            Roll
-          </label>
-          <label
-            className='font-semibold text-md text-gray-500 w-5'
-            htmlFor='class'>
-            :
-          </label>
-          <input
-            type='text'
-            className='px-1 py-2 w-96 rounded ring-1 ring-gray-300 outline-none'
-            placeholder='Enter your roll number'
-          />
-        </div>
-
-        {/* Input for Registration */}
-        <div className='flex justify-between items-center w-[550px] gap-10'>
-          <label
-            className='font-semibold text-md text-gray-500 w-14'
-            htmlFor='class'>
-            Registration
-          </label>
-          <span
-            className='font-semibold text-md text-gray-500 w-5'
-            htmlFor='class'>
-            :
-          </span>
-          <input
-            type='text'
-            className='px-1 py-2 w-96 rounded ring-1 ring-gray-300 outline-none'
-            placeholder='Enter your registration number'
-          />
+        <div className='flex justify-between items-center w-full lg:gap-5 gap-3'>
+          <div className='space-y-[40px] flex flex-col'>
+            <p className='text-md text-gray-500 font-semibold'>Examination</p>
+            <p className='text-md text-gray-500 font-semibold'>Exam Year</p>
+            <p className='text-md text-gray-500 font-semibold'>Class</p>
+            <p className='text-md text-gray-500 font-semibold w-28'>
+              Application ID
+            </p>
+            <p className='text-md text-gray-500 font-semibold'>Password</p>
+          </div>
+          <div className='space-y-[40px] flex flex-col'>
+            <p>:</p>
+            <p>:</p>
+            <p>:</p>
+            <p>:</p>
+            <p>:</p>
+          </div>
+          <div className='space-y-5 flex flex-col'>
+            <Selector data={exams} />
+            <Selector data={exams} />
+            <Selector data={exams} />
+            <input
+              type='text'
+              className='px-1 py-2 lg:w-full w-48 rounded ring-1 ring-gray-300 outline-none'
+              placeholder='Enter your Application ID'
+            />
+            <input
+              type='text'
+              className='px-1 py-2 lg:w-full w-48 rounded ring-1 ring-gray-300 outline-none'
+              placeholder='Enter your Password'
+            />
+          </div>
         </div>
 
         {/* Buttons for this page */}
 
         <div className='flex justify-center items-center gap-5'>
           <button
-            className='bg-primary py-2 w-36 rounded text-white ml-[90px]'
+            className='bg-primary py-2 w-36 rounded text-white lg:ml-[130px] ml-12'
             onClick={() => setIsTrue(true)}>
             Search
           </button>

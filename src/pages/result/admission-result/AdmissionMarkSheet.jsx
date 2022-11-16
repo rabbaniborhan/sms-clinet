@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const AdmissionMarkSheet = () => {
   return (
-    <div className='w-3/4 mx-auto pt-5 pb-1 px-20 text-primary-text bg-white relative border border-gray-300'>
-      <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
+    <div className='lg:w-3/4 mx-auto pt-5 pb-1 lg:px-20 px-5 text-primary-text bg-white relative border border-gray-300'>
+      <div className='absolute lg:block hidden lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
         <Image src={images.bigLogo} height={450} width={450} />
       </div>
       <div className='text-center space-y-2'>
@@ -19,8 +19,8 @@ const AdmissionMarkSheet = () => {
           <span className='bg-gray-400 py-[1px] w-80'></span>
         </h3>
       </div>
-      <div className='w-full px-5 mx-auto my-14'>
-        <div className='flex justify-between capitalize'>
+      <div className='w-full mx-auto my-14'>
+        <div className='lg:flex justify-between capitalize'>
           <div className='font-corsiva flex justify-between items-center capitalize '>
             <div className='space-y-5 font-semibold text-base'>
               <p>name</p>
@@ -41,16 +41,16 @@ const AdmissionMarkSheet = () => {
               <p>Business studies</p>
             </div>
           </div>
-          <div className=' flex justify-between capitalize'>
+          <div className='flex justify-between capitalize mt-5 lg:mt-0'>
             <div className='font-semibold text-base space-y-5'>
               <p>date</p>
               <p>position</p>
             </div>
-            <div className='ml-20 mr-12 space-y-5'>
+            <div className='lg:ml-20 lg:mr-12 -ml-[14px] space-y-5'>
               <p>:</p>
               <p>:</p>
             </div>
-            <div className='font-bangla font-bold space-y-5'>
+            <div className='font-bangla font-bold space-y-5 mr-[52px]'>
               <p>11/12/20022</p>
               <p>60</p>
             </div>
