@@ -7,7 +7,7 @@ const MarkSheet = ({ reportData }) => {
   console.log(reportData);
   return (
     <div className='w-full mx-auto'>
-      <div className='w-full mx-auto pt-5 pb-1 px-10 text-primary-text bg-white relative border border-gray-300'>
+      <div className='w-full mx-auto pt-5 pb-1 lg:px-10 text-primary-text bg-white relative border border-gray-300'>
         <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} height={600} width={600} />
         </div>
@@ -24,17 +24,17 @@ const MarkSheet = ({ reportData }) => {
         </div>
 
         <div className='w-full px-5 mx-auto my-14'>
-          <div className='flex justify-between capitalize'>
+          <div className='lg:flex justify-between capitalize'>
             <div className='font-corsiva flex justify-between items-center capitalize '>
               <div className='space-y-5 font-semibold text-base'>
                 <p>name</p>
-                <p>father's name</p>
-                <p>mother's name</p>
+                <p className=''>father's name</p>
+                <p className=''>mother's name</p>
                 <p>class</p>
                 <p>roll</p>
-                <p>registration</p>
+                <p className=''>registration</p>
               </div>
-              <div className='mx-14 space-y-5'>
+              <div className='lg:mx-14 space-y-5'>
                 <p>:</p>
                 <p>:</p>
                 <p>:</p>
@@ -42,27 +42,27 @@ const MarkSheet = ({ reportData }) => {
                 <p>:</p>
                 <p>:</p>
               </div>
-              <div className='space-y-4 font-cursive font-bold text-md'>
+              <div className='lg:space-y-4 space-y-5 font-cursive font-bold text-md'>
                 <p>{reportData?.name}</p>
                 <p>{reportData?.father}</p>
                 <p>{reportData?.mother}</p>
                 <p>{reportData?.class}</p>
-                <p className='text-2xl'>{reportData?.roll}</p>
-                <p className='text-2xl'>{reportData?.registration}</p>
+                <p className='lg:text-2xl'>{reportData?.roll}</p>
+                <p className='lg:text-2xl'>{reportData?.registration}</p>
               </div>
             </div>
-            <div className=' flex justify-between gap-10 capitalize'>
+            <div className='flex lg:justify-between mt-5 lg:mt-0 lg:gap-10 gap-14 capitalize'>
               <div className='w-1/5 font-semibold text-base space-y-5'>
                 <p>date</p>
                 <p>position</p>
               </div>
-              <div className=' space-y-5'>
-                <p>:</p>
-                <p>:</p>
+              <div className='space-y-5 ml-6'>
+                <p className=''>:</p>
+                <p className=''>:</p>
               </div>
               <div className='font-cursive font-bold text-md space-y-5'>
-                <p className='w-16'>{reportData?.date}</p>
-                <p className='w-20'>{reportData?.position}</p>
+                <p className='lg:w-16 -ml-7 lg:ml-0'>{reportData?.date}</p>
+                <p className='lg:w-20 -ml-7 lg:ml-0'>{reportData?.position}</p>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ const MarkSheet = ({ reportData }) => {
             </tbody>
           </table>
           <div>
-            <div className='flex justify-between items-center mt-40'>
+            <div className='flex lg:flex-row flex-col gap-20 lg:gap-0 justify-between items-center mt-40'>
               <h3 className='text-semibold text-lg flex flex-col justify-center items-start gap-1'>
                 <span className='bg-gray-800 py-[0.5px] w-64'></span>
                 Controller of Examination

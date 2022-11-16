@@ -85,14 +85,14 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
             <div
               className={`lg:absolute ${
                 path.heightAlter
-                  ? "w-[75%] mx-auto lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
-                  : "w-[63%] h-[80%] mx-auto lg:h-[85%] lg:w-[27%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
+                  ? "w-[75%] -mb-2 mx-auto lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
+                  : "w-[63%] mx-auto lg:h-[85%] lg:w-[27%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
                 src={images.headerImage}
                 alt='female-student-holding-books'
                 objectFit='cover'
-                layout={mobileWidth === false ? "fill" : ""}
+                layout={mobileWidth === false ? "fill" : "intrinsic"}
               />
             </div>
           ) : (
