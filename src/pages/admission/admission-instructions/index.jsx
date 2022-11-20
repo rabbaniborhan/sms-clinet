@@ -6,7 +6,7 @@ const AdmissionInstructions = () => {
     <LayoutSecond>
       {/* -------------------------------Admission Instructions-------------------------------- */}
 
-      <div className='w-4/5 mx-auto my-10 py-20'>
+      <div className='w-4/5 mx-auto my-10 lg:py-20'>
         <div className='w-full mx-auto my-20 font-bangla'>
           <div className='space-y-5'>
             <h3 className='font-semibold text-xl flex flex-col justify-start items-start'>
@@ -40,7 +40,7 @@ const AdmissionInstructions = () => {
           <div className='space-y-5'>
             <h3 className='font-semibold text-xl flex flex-col justify-start items-start'>
               Online Monthly Fee Payment এর নির্দেশাবলীঃ
-              <span className='bg-[#1EB3A6] py-[1px] w-96'></span>
+              <span className='bg-[#1EB3A6] py-[1px] lg:w-96 w-[300px]'></span>
             </h3>
             <p>
               ১। Online এ Monthly Fee Payment এর জন্য Student ID জানা আবশ্যক ।
@@ -85,7 +85,7 @@ const AdmissionInstructions = () => {
           <div className='space-y-5'>
             <h3 className='font-semibold text-xl flex flex-col justify-start items-start'>
               DBBL Rocket Account থেকে ডায়াল *৩২২# (Biller ID: 2580)
-              <span className='bg-[#1EB3A6] py-[1px] w-[500px]'></span>
+              <span className='bg-[#1EB3A6] py-[1px] lg:w-[500px] w-[300px]'></span>
             </h3>
             <p>1. Bill Pay</p>
             <p>
@@ -115,7 +115,7 @@ const AdmissionInstructions = () => {
           <div className='space-y-5'>
             <h3 className='font-semibold text-xl flex flex-col justify-start items-start'>
               DBBL Rocket Mobile App (Biller ID: 3086)
-              <span className='bg-[#1EB3A6] py-[1px] w-[370px]'></span>
+              <span className='bg-[#1EB3A6] py-[1px] lg:w-[370px] w-[300px]'></span>
             </h3>
             <div className='py-3'>
               <p className='font-semibold'>

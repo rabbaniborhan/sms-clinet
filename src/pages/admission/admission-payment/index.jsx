@@ -6,9 +6,8 @@ import AdmissionPaymentSlip from "./AdmissionPaymentSlip";
 const AdmissionPayment = () => {
   return (
     <LayoutSecond>
-      <div className='w-4/5 mx-auto my-20 py-20'>
+      <div className='lg:w-4/5 w-auto mx-auto my-20 py-20'>
         <AdmissionPaymentSlip />
-        <AdmissionPaymentForm />
       </div>
     </LayoutSecond>
   );

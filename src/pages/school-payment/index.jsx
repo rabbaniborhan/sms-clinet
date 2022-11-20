@@ -7,9 +7,9 @@ import SchoolPaymentDetails from "./SchoolPaymentDetails";
 const SchoolPaymentPage = () => {
   return (
     <LayoutSecond>
-      <div className='w-4/5 mx-auto my-20 py-20'>
+      <div className='lg:w-4/5 w-11/12 mx-auto my-20 py-20'>
         <div>
-          <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
+          <h2 className='text-latest-news-color text-center lg:text-4xl text-2xl my-5 font-bold'>
             School Payment Form
           </h2>
           <div className='mb-10'>

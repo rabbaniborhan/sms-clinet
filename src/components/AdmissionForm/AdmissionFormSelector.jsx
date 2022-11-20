@@ -15,7 +15,7 @@ function AdmissionFormSelector({ setClassName, className }) {
     <div>
       <Listbox value={selected} onChange={setSelected}>
         <div className='relative mt-1'>
-          <Listbox.Button className='relative cursor-default px-5 py-2.5 w-[600px]  rounded ring-1 ring-gray-400 outline-none text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-1 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm'>
+          <Listbox.Button className='relative cursor-default px-5 py-2.5 lg:w-[600px] w-48 rounded ring-1 ring-gray-400 outline-none text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-1 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm'>
             <span className='block truncate text-xs font-semibold'>
               {className}
             </span>

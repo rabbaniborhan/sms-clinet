@@ -8,7 +8,7 @@ const MarkSheet = ({ reportData }) => {
   return (
     <div className='w-full mx-auto'>
       <div className='w-full mx-auto pt-5 pb-1 lg:px-10 text-primary-text bg-white relative border border-gray-300'>
-        <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
+        <div className='absolute lg:top-1/2 top-1/2 lg:left-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} height={600} width={600} />
         </div>
         <div className='text-center space-y-2'>
@@ -111,7 +111,7 @@ const MarkSheet = ({ reportData }) => {
                   {reportData?.totalOf}
                 </td>
                 <td className='text-center font-bold text-md relative'>
-                  <span className='absolute top-[-130px] left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                  <span className='absolute lg:top-[-130px] -top-[250px] left-1/2 -translate-x-1/2 -translate-y-1/2'>
                     {reportData?.gpa}
                   </span>
                 </td>
