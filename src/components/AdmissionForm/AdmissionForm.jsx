@@ -8,7 +8,7 @@ import AdmissionFormLabels from "./AdmissionFormLabels";
 const AdmissionForm = ({ studentClass }) => {
   return (
     <div>
-      <div className='mx-auto py-10 px- bg-white text-primary-text border border-gray-300'>
+      <div className='mx-auto py-10 px-5 bg-white text-primary-text border border-gray-300'>
         <div className='text-center space-y-3'>
           <Image src={images.schoolLogo} />
           <h2 className='text-3xl text-bold'>
@@ -23,7 +23,7 @@ const AdmissionForm = ({ studentClass }) => {
         </div>
 
         {/* Admission from inputs */}
-        <div className='flex justify-between items-center xl:w-4/5 lg:w-11/12 mx-auto mt-16'>
+        <div className='flex justify-between items-center xl:w-4/5 lg:w-11/12 w-full mx-auto mt-16'>
           <AdmissionFormLabels />
           <AdmissionFormColons />
           <AdmissionFormInputs />

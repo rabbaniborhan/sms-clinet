@@ -3,15 +3,15 @@ import React from "react";
 const SchoolPaymentDetails = () => {
   return (
     <div>
-      <div className='w-3/4 mx-auto bg-white border border-gray-300 p-10'>
-        <div className='flex justify-between capitalize'>
-          <div className='font-corsiva flex justify-between items-center capitalize '>
+      <div className='lg:w-3/4 w-11/12 mx-auto bg-white border border-gray-300 lg:p-10 p-5'>
+        <div className='lg:flex justify-between capitalize'>
+          <div className='font-corsiva flex lg:justify-between items-center capitalize'>
             <div className='space-y-4 font-semibold text-base'>
               <p>Student name</p>
               <p>class</p>
               <p>roll no</p>
             </div>
-            <div className='mx-14 space-y-4'>
+            <div className='lg:mx-14 ml-4 lg:ml-0 lg:mr-0 mr-12 space-y-4'>
               <p>:</p>
               <p>:</p>
               <p>:</p>
@@ -22,13 +22,13 @@ const SchoolPaymentDetails = () => {
               <p>9120</p>
             </div>
           </div>
-          <div className=' flex justify-between capitalize'>
-            <div className='w-1/5 font-semibold text-base space-y-4 -mr-10'>
+          <div className='flex justify-between capitalize'>
+            <div className='lg:w-1/5 font-semibold text-base space-y-4 lg:-mr-10 -ml-4 lg:ml-0'>
               <p className='w-16'>Section</p>
               <p className='w-16'>Session</p>
               <p className='w-16'>Phone</p>
             </div>
-            <div className='ml-24 mr-10 space-y-4'>
+            <div className='lg:ml-24 lg:mr-10 space-y-4'>
               <p>:</p>
               <p>:</p>
               <p>:</p>
@@ -40,83 +40,89 @@ const SchoolPaymentDetails = () => {
             </div>
           </div>
         </div>
-        <table className='w-full mx-auto mt-10'>
-          <thead>
-            <tr className='bg-[#97F4EC]'>
-              <th className='py-3 px-5 font-bold border-x-[0.5px] border-gray-300 text-left'>
-                Sl
-              </th>
-              <th className='py-3 px-5 font-bold border-x-[0.5px] border-gray-300 text-left'>
-                Description
-              </th>
-              <th className='py-3 px-5 font-bold border-x-[0.5px] border-gray-300 text-left'>
-                Month
-              </th>
-              <th className='py-3 px-5 w-60 font-bold border-x-[0.5px] border-gray-300 text-right'>
-                Amount
-              </th>
-            </tr>
-          </thead>
-          <tbody className='text-gray-500 border-[0.5px] border-gray-300'>
-            {/* ------------------------Admission fee row---------------------- */}
-            <tr className='border-x-[0.5px] border-gray-300 bg-[#FFFFFF]'>
-              <td className='py-3 px-5 text-left font-semibold'>1</td>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                Admission fee
-              </td>
-              <td className='py-3 px-5 text-left font-semibold'>Jan - June</td>
-              <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
-                500
-              </td>
-            </tr>
 
-            {/* -------------------------Tution fee row--------------------------  */}
-            <tr className='border-x-[0.5px] border-gray-300 bg-[#F0F0F0]'>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                2
-              </td>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                Tution fee
-              </td>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                -
-              </td>
-              <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
-                3000
-              </td>
-            </tr>
+        <div className='overflow-x-auto lg:overscroll-x-none'>
+          <table className='w-full mx-auto mt-10'>
+            <thead>
+              <tr className='bg-[#97F4EC]'>
+                <th className='py-3 px-5 font-bold border-x-[0.5px] border-gray-300 text-left'>
+                  Sl
+                </th>
+                <th className='py-3 px-5 font-bold border-x-[0.5px] border-gray-300 text-left'>
+                  Description
+                </th>
+                <th className='py-3 px-5 font-bold border-x-[0.5px] border-gray-300 text-left'>
+                  Month
+                </th>
+                <th className='py-3 px-5 w-60 font-bold border-x-[0.5px] border-gray-300 text-right'>
+                  Amount
+                </th>
+              </tr>
+            </thead>
+            <tbody className='text-gray-500 border-[0.5px] border-gray-300'>
+              {/* ------------------------Admission fee row---------------------- */}
+              <tr className='border-x-[0.5px] border-gray-300 bg-[#FFFFFF]'>
+                <td className='py-3 px-5 text-left font-semibold'>1</td>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  Admission fee
+                </td>
+                <td className='py-3 px-5 text-left font-semibold'>
+                  Jan - June
+                </td>
+                <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
+                  500
+                </td>
+              </tr>
 
-            {/* ---------------------------Exam fee row--------------------------- */}
-            <tr className='border-x-[0.5px] border-gray-300 bg-[#ffffff]'>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                3
-              </td>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                Exam fee
-              </td>
-              <td className='py-3 px-5 text-left font-semibold'>-</td>
-              <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
-                500
-              </td>
-            </tr>
+              {/* -------------------------Tution fee row--------------------------  */}
+              <tr className='border-x-[0.5px] border-gray-300 bg-[#F0F0F0]'>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  2
+                </td>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  Tution fee
+                </td>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  -
+                </td>
+                <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
+                  3000
+                </td>
+              </tr>
 
-            {/* -------------------------Registration fee row--------------------- */}
-            <tr className='border-x-[0.5px] border-gray-300 bg-[#F0F0F0]'>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                3
-              </td>
-              <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
-                Registration fee
-              </td>
-              <td className='py-3 px-5 text-left font-semibold'>-</td>
-              <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
-                2000
-              </td>
-            </tr>
+              {/* ---------------------------Exam fee row--------------------------- */}
+              <tr className='border-x-[0.5px] border-gray-300 bg-[#ffffff]'>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  3
+                </td>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  Exam fee
+                </td>
+                <td className='py-3 px-5 text-left font-semibold'>-</td>
+                <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
+                  500
+                </td>
+              </tr>
 
-            {/* ------------------------Total fees row----------------------------- */}
-          </tbody>
-        </table>
+              {/* -------------------------Registration fee row--------------------- */}
+              <tr className='border-x-[0.5px] border-gray-300 bg-[#F0F0F0]'>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  3
+                </td>
+                <td className='py-3 px-5 text-left font-semibold border-x-[0.5px] border-gray-300'>
+                  Registration fee
+                </td>
+                <td className='py-3 px-5 text-left font-semibold'>-</td>
+                <td className='py-3 px-5 text-right font-semibold border-x-[0.5px] border-gray-300'>
+                  2000
+                </td>
+              </tr>
+
+              {/* ------------------------Total fees row----------------------------- */}
+            </tbody>
+          </table>
+        </div>
+
         <div className='flex justify-between items-center'>
           <div className='flex-1'>
             <div className='flex gap-3 mt-14'>

@@ -5,7 +5,7 @@ import { LayoutSecond, AdmissionForm } from "../../components";
 const ClassNinePage = () => {
   return (
     <LayoutSecond>
-      <div className='w-4/5 mx-auto my-20 py-20'>
+      <div className='lg:w-4/5 mx-auto my-20 py-20'>
         <div>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
             Admission Form

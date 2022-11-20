@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const AdmissionPaymentSlip = () => {
   return (
-    <div className='w-3/4 mx-auto'>
-      <div className='w-full mx-auto pt-5 pb-1 px-10 text-primary-text bg-white relative border border-gray-300'>
-        <div className='absolute lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
+    <div className='lg:w-3/4 w-full mx-auto'>
+      <div className='w-full mx-auto pt-5 pb-1 lg:px-10 text-primary-text bg-white relative border border-gray-300'>
+        <div className='absolute lg:top-1/2 lg:left-1/2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <Image src={images.bigLogo} height={450} width={450} />
         </div>
         <div className='text-center space-y-2'>
@@ -111,15 +111,6 @@ const AdmissionPaymentSlip = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className='w-full flex justify-end items-end gap-3 mx-auto my-16'>
-        <button className='bg-yellow text-white py-3 w-36 rounded'>
-          Print
-        </button>
-        <button className='bg-primary text-white py-3 w-36 rounded'>
-          Download
-        </button>
       </div>
     </div>
   );
