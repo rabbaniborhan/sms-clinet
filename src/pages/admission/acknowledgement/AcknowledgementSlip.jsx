@@ -2,12 +2,20 @@ import React from "react";
 import images from "../../../assets";
 import Image from "next/image";
 import AcknowledgementTable from "./AcknowledgementTable";
+import { useRouter } from "next/router";
 
 const AcknowledgementSlip = () => {
+  const router = useRouter();
   return (
     <div>
       <head>
-        <meta name='viewport' content='width=1080'></meta>
+        <meta
+          name='viewport'
+          content={
+            router.asPath.includes("/admission/acknowledgement")
+              ? "width=1080"
+              : "width=device-width, initial-scale=1.0"
+          }></meta>
       </head>
       <div className=' w-full mx-auto '>
         <div className='w-full mx-auto pt-5 pb-1 px-20 text-primary-text bg-white relative'>
