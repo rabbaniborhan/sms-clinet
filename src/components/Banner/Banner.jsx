@@ -10,7 +10,7 @@ import MobileNavbar from "../MobileNavbar/MobileNavbar";
 
 const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
   const mobileWidth =
-    typeof window !== "undefined" ? window.innerWidth < 769 : null;
+    typeof window !== "undefined" ? window.innerWidth > 769 : null;
   const dispatch = useDispatch();
 
   const handleShowModal = () => {
@@ -86,13 +86,12 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
               className={`lg:absolute ${
                 path.heightAlter
                   ? "w-[75%] -mb-2 mx-auto lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
-                  : "w-[60%] -mb-2 mx-auto lg:h-[85%] lg:w-[27%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
+                  : "w-[60%] -mb-2 mx-auto lg:h-[85%] lg:w-[31%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
                 src={images.headerImage}
                 alt='female-student-holding-books'
                 objectFit='cover'
-                layout={mobileWidth === false ? "fill" : "intrinsic"}
               />
             </div>
           ) : (

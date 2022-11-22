@@ -7,6 +7,9 @@ import { getAllData } from "../../../routineData";
 const ExamRoutinePage = ({ tableData }) => {
   return (
     <LayoutSecond>
+      <head>
+        <meta name='viewport' content='width=1280'></meta>
+      </head>
       <div className='lg:w-4/5 w-11/12 mx-auto relative'>
         <div className=' py-20 my-20'>
           <div>
