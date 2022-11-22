@@ -9,8 +9,6 @@ import MobileNavbar from "../MobileNavbar/MobileNavbar";
 // <---------------The parent component is index.jsx/Homepage + teacher-info.jsx + staff-info.jsx + about-us.jsx + contact.jsx---------------------->
 
 const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
-  const mobileWidth =
-    typeof window !== "undefined" ? window.innerWidth > 769 : null;
   const dispatch = useDispatch();
 
   const handleShowModal = () => {
