@@ -4,7 +4,7 @@ import { LayoutSecond, Selector } from "../../../components";
 const AdmissionTestResultSearchForm = () => {
   const exams = [{ name: "Mid-Semester" }];
   return (
-    <div className='lg:w-[55%] mb-20 w-full lg:mb-0 mx-auto lg:px-10 px-5 py-10 bg-white border border-gray-300'>
+    <div className='lg:w-fit mb-20 w-full lg:mb-0 mx-auto lg:px-10 px-5 py-10 bg-white border border-gray-300'>
       <form className='flex flex-col justify-center items-center gap-10 w-full'>
         {/* Input for Examination */}
 

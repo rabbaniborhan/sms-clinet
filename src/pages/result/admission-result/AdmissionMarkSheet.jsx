@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AdmissionMarkSheet = () => {
   return (
-    <div className='lg:w-3/4 mx-auto pt-5 pb-1 lg:px-20 px-5 text-primary-text bg-white relative border border-gray-300'>
+    <div className='lg:w-4/5 mx-auto pt-5 pb-1 lg:px-20 px-5 text-primary-text bg-white relative border border-gray-300'>
       <div className='absolute lg:block hidden lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2'>
         <Image src={images.bigLogo} height={450} width={450} />
       </div>

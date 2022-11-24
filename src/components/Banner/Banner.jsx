@@ -83,7 +83,7 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
             <div
               className={`lg:absolute ${
                 path.heightAlter
-                  ? "w-[75%] -mb-2 mx-auto lg:h-[350px] lg:w-[230px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
+                  ? "w-[75%] -mb-2 mx-auto lg:h-[330px] lg:w-[250px] lg:-mb-24 xl:h-[550px] xl:w-[360px] xl:-mb-40 xl:right-20 lg:right-32"
                   : "w-[60%] -mb-2 mx-auto lg:h-[85%] lg:w-[31%] xl:h-[700px] xl:w-[550px] xl:right-0 lg:right-16 lg:-mb-24 xl:-mb-40"
               }`}>
               <Image
@@ -96,13 +96,9 @@ const Banner = ({ path, navPath, subPath, setShowModal, paddingAlter }) => {
             <div
               className={`lg:absolute ${
                 path.heightAlter &&
-                "xl:h-[540px] xl:w-[450px] xl:-mb-28 w-[95%] mx-auto lg:mx-0"
+                "xl:h-[540px] xl:w-[450px] xl:-mb-28 w-[97%] mx-auto lg:mx-0"
               } lg:h-[330px] lg:w-[280px] lg:-mb-24 lg:right-28 xl:right-16`}>
-              <Image
-                src={images.principalImg2}
-                alt='Principal_image'
-                layout={mobileWidth === false ? "fill" : "responsive"}
-              />
+              <Image src={images.principalImg2} alt='Principal_image' />
             </div>
           )}
         </div>
