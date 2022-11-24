@@ -8,7 +8,7 @@ const ClassRoutinePage = ({ classRoutineData }) => {
   return (
     <LayoutSecond>
       <head>
-        <meta name='viewport' content='width=1280'></meta>
+        <meta name='viewport' content='width=1180'></meta>
       </head>
       <div className='lg:w-4/5 w-11/12 mx-auto'>
         <div className=' py-20 my-20'>
