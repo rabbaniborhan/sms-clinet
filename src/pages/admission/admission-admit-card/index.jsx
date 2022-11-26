@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import { LayoutSecond } from "../../../components";
 import AdmissionAdmitCard from "./AdmissionAdmitCard";
@@ -6,9 +7,9 @@ import AdmitCardForm from "./AdmitCardForm";
 const AdmissionAdmitCardPage = () => {
   return (
     <LayoutSecond>
-      <head>
+      <Head>
         <meta name='viewport' content='width=1280'></meta>
-      </head>
+      </Head>
       <div className='w-4/5 mx-auto py-20 my-20'>
         <div className='mb-10'>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>

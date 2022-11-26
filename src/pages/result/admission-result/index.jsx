@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import { LayoutSecond } from "../../../components";
 import AdmissionMarkSheet from "./AdmissionMarkSheet";
@@ -6,9 +7,9 @@ import AdmissionTestResultSearchForm from "./AdmissionTestResultSearchForm";
 const AdmissionResultPage = () => {
   return (
     <LayoutSecond>
-      <head>
+      <Head>
         <meta name='viewport' content='width=1280'></meta>
-      </head>
+      </Head>
       <div className='lg:w-4/5 w-11/12 mx-auto my-20 py-20'>
         <div>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>

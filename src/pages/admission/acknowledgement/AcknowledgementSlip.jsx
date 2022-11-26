@@ -3,12 +3,13 @@ import images from "../../../assets";
 import Image from "next/image";
 import AcknowledgementTable from "./AcknowledgementTable";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const AcknowledgementSlip = () => {
   const router = useRouter();
   return (
     <div>
-      <head>
+      <Head>
         <meta
           name='viewport'
           content={
@@ -16,7 +17,7 @@ const AcknowledgementSlip = () => {
               ? "width=1080"
               : "width=device-width, initial-scale=1.0"
           }></meta>
-      </head>
+      </Head>
       <div className=' w-full mx-auto '>
         <div className='w-full mx-auto pt-5 pb-1 px-20 text-primary-text bg-white relative'>
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:left-[350px]'>
