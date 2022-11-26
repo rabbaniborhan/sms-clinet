@@ -3,13 +3,14 @@ import SchoolPaymentSlip from "./SchoolPaymentSlip";
 import { LayoutSecond } from "../../components";
 import SchoolPaymentForm from "./SchoolPaymentForm/SchoolPaymentForm";
 import SchoolPaymentDetails from "./SchoolPaymentDetails";
+import Head from "next/head";
 
 const SchoolPaymentPage = () => {
   return (
     <LayoutSecond>
-      <head>
+      <Head>
         <meta name='viewport' content='width=1280'></meta>
-      </head>
+      </Head>
       <div className='lg:w-4/5 w-11/12 mx-auto my-20 py-20'>
         <div>
           <h2 className='text-latest-news-color text-center lg:text-4xl text-2xl my-5 font-bold'>

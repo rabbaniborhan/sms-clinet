@@ -3,13 +3,14 @@ import { LayoutSecond } from "../../components";
 import ClassRoutine from "./ClassRoutine";
 import RoutineSearchForm from "./RoutineSearchForm";
 import { getClassRoutineData } from "../../../routineData";
+import Head from "next/head";
 
 const ClassRoutinePage = ({ classRoutineData }) => {
   return (
     <LayoutSecond>
-      <head>
+      <Head>
         <meta name='viewport' content='width=1180'></meta>
-      </head>
+      </Head>
       <div className='lg:w-4/5 w-11/12 mx-auto'>
         <div className=' py-20 my-20'>
           <div>

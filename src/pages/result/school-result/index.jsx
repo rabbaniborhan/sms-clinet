@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import { LayoutSecond } from "../../../components";
 import { getReportData } from "../../../constants/reportCardData";
@@ -9,9 +10,9 @@ import SchoolResultSearchForm from "./SchoolResultSearchForm";
 const SchoolResultPage = ({ reportData }) => {
   return (
     <LayoutSecond>
-      <head>
+      <Head>
         <meta name='viewport' content='width=1280'></meta>
-      </head>
+      </Head>
       <div className='lg:w-4/5 w-11/12 mx-auto py-32 lg:px-32'>
         <div>
           <h2 className='text-latest-news-color text-center text-4xl my-5 font-bold'>
